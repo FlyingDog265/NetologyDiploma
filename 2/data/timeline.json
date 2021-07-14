@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "fv-az224-399",
+    "children" : [ {
+      "name" : "3965@fv-az224-399.Test worker(11)",
+      "children" : [ {
+        "name" : "Страница \"Путешествие дня\" доступна по адресу localhost:8080",
+        "uid" : "aed7f9b95e786690",
+        "parentUid" : "6edb6a60ec5b1af946534de1ea2c897f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626301993981,
+          "stop" : 1626302001500,
+          "duration" : 7519
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6edb6a60ec5b1af946534de1ea2c897f"
+    } ],
+    "uid" : "fad6f5bc4dfe294b1218c0e8001928fc"
+  } ],
+  "name" : "timeline"
+}

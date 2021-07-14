@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "ru.netology.cases.MainPageTest",
+    "children" : [ {
+      "name" : "shouldOpenOnLocalhost",
+      "uid" : "aed7f9b95e786690",
+      "parentUid" : "a879060ae36a8357f2c81e78561feab2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626301993981,
+        "stop" : 1626302001500,
+        "duration" : 7519
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "ru.netology.cases.MainPageTest"
+  } ],
+  "name" : "packages"
+}

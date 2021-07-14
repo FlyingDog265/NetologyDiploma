@@ -1,0 +1,104 @@
+{
+  "uid" : "aed7f9b95e786690",
+  "name" : "Страница \"Путешествие дня\" доступна по адресу localhost:8080",
+  "fullName" : "ru.netology.cases.MainPageTest.shouldOpenOnLocalhost",
+  "historyId" : "4f1c518e9989a66bed2cdef19db3f1eb",
+  "time" : {
+    "start" : 1626301993981,
+    "stop" : 1626302001500,
+    "duration" : 7519
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открыть страницу \"Путешествие дня\"",
+      "time" : {
+        "start" : 1626301994014,
+        "stop" : 1626302001339,
+        "duration" : 7325
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить отображения хедера",
+      "time" : {
+        "start" : 1626302001339,
+        "stop" : 1626302001489,
+        "duration" : 150
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Основной прогон"
+  }, {
+    "name" : "story",
+    "value" : "Главная страница"
+  }, {
+    "name" : "host",
+    "value" : "fv-az224-399"
+  }, {
+    "name" : "thread",
+    "value" : "3965@fv-az224-399.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.netology.cases.MainPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.netology.cases.MainPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldOpenOnLocalhost"
+  }, {
+    "name" : "suite",
+    "value" : "ru.netology.cases.MainPageTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "aed7f9b95e786690.json",
+  "parameterValues" : [ ]
+}
