@@ -1,0 +1,22 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "ru.netology.cases.MainPageTest",
+    "children" : [ {
+      "name" : "Страница \"Путешествие дня\" доступна по адресу localhost:8080",
+      "uid" : "b2e6ef46f80a05d2",
+      "parentUid" : "e7f45c8fd798eed440c6cf8c4ffbfa57",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626302544392,
+        "stop" : 1626302547709,
+        "duration" : 3317
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e7f45c8fd798eed440c6cf8c4ffbfa57"
+  } ],
+  "name" : "suites"
+}

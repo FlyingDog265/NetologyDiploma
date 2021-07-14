@@ -1,0 +1,11 @@
+[ {
+  "uid" : "b2e6ef46f80a05d2",
+  "name" : "Страница \"Путешествие дня\" доступна по адресу localhost:8080",
+  "time" : {
+    "start" : 1626302544392,
+    "stop" : 1626302547709,
+    "duration" : 3317
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

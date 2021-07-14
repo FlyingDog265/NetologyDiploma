@@ -1,0 +1,26 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "Основной прогон",
+    "children" : [ {
+      "name" : "Главная страница",
+      "children" : [ {
+        "name" : "Страница \"Путешествие дня\" доступна по адресу localhost:8080",
+        "uid" : "b2e6ef46f80a05d2",
+        "parentUid" : "13e6bc7213bbc898dfbd42c2252a6566",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626302544392,
+          "stop" : 1626302547709,
+          "duration" : 3317
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "13e6bc7213bbc898dfbd42c2252a6566"
+    } ],
+    "uid" : "558e511af958c588a0e41965e8643035"
+  } ],
+  "name" : "behaviors"
+}
