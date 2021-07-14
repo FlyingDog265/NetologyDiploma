@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:8.0.25
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./data_mysql:/var/lib/mysql
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - MYSQL_DATABASE=app
+      - MYSQL_USER=app
+      - MYSQL_PASSWORD=pass
+  node-app:
+    build: artifacts/gate-simulator
+    image: node-app:1.0
+    ports:
+      - '9999:9999'

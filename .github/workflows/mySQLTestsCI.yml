@@ -1,0 +1,68 @@
+# This workflow will build a Java project with Gradle
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-gradle
+
+name: Test with MySQL
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  tests-with-mysql:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/cache@v1
+      with:
+        path: |
+          ~/.m2/repository
+          ~/.gradle/caches
+        key: ${{ runner.os }}-${{ github.workflow }}-${{ hashFiles('**/build.gradle') }}
+        restore-keys: |
+          ${{ runner.os }}-${{ github.workflow }}-
+    - name: Build the docker-compose stack
+      run: docker-compose -f docker-compose-mysql.yml up -d --force-recreate
+    - name: Wait for containers start
+      run: sleep 30					
+    - name: Set up JDK 11
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11		
+    - name: Start aqa-shop
+      run: sudo java -Dspring.datasource.url=jdbc:mysql://localhost:3306/app -jar artifacts/aqa-shop.jar &		
+    - name: Wait for aqa-shop start
+      run: sleep 30	
+    - name: Check for aqa-shop's respond
+      run: sudo curl localhost:8080		
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+    - name: Build with Gradle
+      run: ./gradlew test -Ddb.url=jdbc:mysql://localhost:3306/app  -Dlogin=app -Dpassword=pass -Dapp.url=http://localhost:8080 -Dselenide.headless=true
+      continue-on-error: true
+    - name: Get Allure history
+      uses: actions/checkout@v2
+      if: always()
+      continue-on-error: true
+      with:
+        ref: gh-pages
+        path: gh-pages
+
+    - name: Allure Report action from marketplace
+      uses: simple-elf/allure-report-action@master
+      if: always()
+      #id: allure-report
+      with:
+        allure_results: build/allure-results
+        #gh_pages: gh-pages
+        #allure_report: allure-report
+        allure_history: allure-history
+
+    - name: Deploy report to Github Pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: allure-history
