@@ -10,10 +10,11 @@ import static com.codeborne.selenide.Selenide.element;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
-@Feature("Основной прогон")
-@Story("Главная страница")
 public class MainPageTest {
+
     @Test
+    @Feature("Основной прогон")
+    @Story("Главная страница")
     @DisplayName("Страница \"Путешествие дня\" доступна по адресу localhost:8080")
     void shouldOpenOnLocalhost() {
         step("Открыть страницу \"Путешествие дня\"", () ->
