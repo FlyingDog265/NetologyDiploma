@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Jul 16 06:52:25 GMT 2021","Fri Jul 16 06:52:33 GMT 2021","8678","","ru.netology.cases.MainPageTest","","ru.netology.cases.MainPageTest","shouldOpenOnLocalhost","Страница ""Путешествие дня"" доступна по адресу localhost:8080",""
