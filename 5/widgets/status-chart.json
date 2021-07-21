@@ -1,0 +1,21 @@
+[ {
+  "uid" : "606fcd23c56cbfad",
+  "name" : "Презентация главной страницы",
+  "time" : {
+    "start" : 1626901758536,
+    "stop" : 1626901769828,
+    "duration" : 11292
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "b0c06d38228923f9",
+  "name" : "Страница \"Путешествие дня\" доступна по адресу localhost:8080",
+  "time" : {
+    "start" : 1626901769934,
+    "stop" : 1626901770096,
+    "duration" : 162
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

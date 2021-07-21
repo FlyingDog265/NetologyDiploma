@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Element should have text 'Марракеш' {div[class*='cardPreview'] h3}\nElement: '<h3 class=\"heading heading_size_m heading_theme_alfa-on-white Order_cardHeading__2PyrG\">Марракэш</h3>'\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1626901769661.0.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1626901769661.0.html\nTimeout: 4 s.",
+      "children" : [ {
+        "name" : "Презентация главной страницы",
+        "uid" : "606fcd23c56cbfad",
+        "parentUid" : "b79e54f83a830b8b8ac0f1b238cae6d5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1626901758536,
+          "stop" : 1626901769828,
+          "duration" : 11292
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b79e54f83a830b8b8ac0f1b238cae6d5"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
