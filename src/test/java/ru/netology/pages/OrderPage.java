@@ -11,8 +11,9 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.element;
 
+@SuppressWarnings("UnusedReturnValue")
 public class OrderPage {
-    private final Duration duration = Duration.ofSeconds(15);
+    private final Duration duration = Duration.ofSeconds(20);
     private final SelenideElement buttonContinue = element(withText("Продолжить")),
             fieldCardNumber = element("fieldset div:nth-of-type(1) input"),
             fieldMonth = element("fieldset div:nth-of-type(2) > span > span:nth-of-type(1) input"),
