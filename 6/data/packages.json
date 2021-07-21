@@ -1,0 +1,56 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "ru.netology.cases",
+    "children" : [ {
+      "name" : "OrderByCardTest",
+      "children" : [ {
+        "name" : "shouldApprovedWithValidCard",
+        "uid" : "335cce6b801b73f7",
+        "parentUid" : "bf3c486e0338f10ff798ab6cbfe7a0ea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626904523043,
+          "stop" : 1626904532202,
+          "duration" : 9159
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bf3c486e0338f10ff798ab6cbfe7a0ea"
+    }, {
+      "name" : "MainPageTest",
+      "children" : [ {
+        "name" : "shouldCorrectPresentation",
+        "uid" : "3464f46fc1431d1a",
+        "parentUid" : "a879060ae36a8357f2c81e78561feab2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626904532312,
+          "stop" : 1626904532783,
+          "duration" : 471
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldOpenOnLocalhost",
+        "uid" : "76fc8b4fe0586f32",
+        "parentUid" : "a879060ae36a8357f2c81e78561feab2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626904532789,
+          "stop" : 1626904532952,
+          "duration" : 163
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a879060ae36a8357f2c81e78561feab2"
+    } ],
+    "uid" : "ru.netology.cases"
+  } ],
+  "name" : "packages"
+}

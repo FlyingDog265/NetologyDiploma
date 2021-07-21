@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Jul 21 21:55:32 GMT 2021","Wed Jul 21 21:55:32 GMT 2021","163","","ru.netology.cases.MainPageTest","","ru.netology.cases.MainPageTest","shouldOpenOnLocalhost","Страница ""Путешествие дня"" доступна по адресу localhost:8080",""
+"passed","Wed Jul 21 21:55:32 GMT 2021","Wed Jul 21 21:55:32 GMT 2021","471","","ru.netology.cases.MainPageTest","","ru.netology.cases.MainPageTest","shouldCorrectPresentation","Презентация главной страницы",""
+"passed","Wed Jul 21 21:55:23 GMT 2021","Wed Jul 21 21:55:32 GMT 2021","9159","","ru.netology.cases.OrderByCardTest","","ru.netology.cases.OrderByCardTest","shouldApprovedWithValidCard","Заявка ""Оплата по карте"", заполненная валидными данными карты со статусом Approved успешно одобрена банком",""

@@ -1,0 +1,206 @@
+{
+  "uid" : "335cce6b801b73f7",
+  "name" : "Заявка \"Оплата по карте\", заполненная валидными данными карты со статусом Approved успешно одобрена банком",
+  "fullName" : "ru.netology.cases.OrderByCardTest.shouldApprovedWithValidCard",
+  "historyId" : "f80ffbf8327d7d8aec3efc0274793397",
+  "time" : {
+    "start" : 1626904523043,
+    "stop" : 1626904532202,
+    "duration" : 9159
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Выбрать оплату по карте",
+      "time" : {
+        "start" : 1626904527286,
+        "stop" : 1626904527723,
+        "duration" : 437
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Кнопка 'Купить' отображается на странице",
+        "time" : {
+          "start" : 1626904527287,
+          "stop" : 1626904527411,
+          "duration" : 124
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Нажать на кнопку 'Купить'",
+        "time" : {
+          "start" : 1626904527411,
+          "stop" : 1626904527597,
+          "duration" : 186
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Заголовок под кнопками содержит текст Оплата по карте",
+        "time" : {
+          "start" : 1626904527599,
+          "stop" : 1626904527721,
+          "duration" : 122
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "text",
+          "value" : "Оплата по карте"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Заполнить данные карты",
+      "time" : {
+        "start" : 1626904527723,
+        "stop" : 1626904528752,
+        "duration" : 1029
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "card",
+        "value" : "ru.netology.helpers.Card@317ffd73"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Нажать на кнопку 'Продолжить'",
+      "time" : {
+        "start" : 1626904528752,
+        "stop" : 1626904528885,
+        "duration" : 133
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Отображается сообщение об успешной отправке заявки",
+      "time" : {
+        "start" : 1626904528885,
+        "stop" : 1626904532106,
+        "duration" : 3221
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Сообщение об успехе содержит заголовок Успешно и текст Операция одобрена Банком.",
+      "time" : {
+        "start" : 1626904532106,
+        "stop" : 1626904532191,
+        "duration" : 85
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "title",
+        "value" : "Успешно"
+      }, {
+        "name" : "text",
+        "value" : "Операция одобрена Банком."
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Основной прогон"
+  }, {
+    "name" : "story",
+    "value" : "Покупка тура по карте"
+  }, {
+    "name" : "host",
+    "value" : "fv-az150-373"
+  }, {
+    "name" : "thread",
+    "value" : "3867@fv-az150-373.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.netology.cases.OrderByCardTest"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.netology.cases.OrderByCardTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldApprovedWithValidCard"
+  }, {
+    "name" : "suite",
+    "value" : "ru.netology.cases.OrderByCardTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "335cce6b801b73f7.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,52 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "ru.netology.cases.OrderByCardTest",
+    "children" : [ {
+      "name" : "Заявка \"Оплата по карте\", заполненная валидными данными карты со статусом Approved успешно одобрена банком",
+      "uid" : "335cce6b801b73f7",
+      "parentUid" : "bdeb81cebc7c3af3ec072e836f4ccd81",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626904523043,
+        "stop" : 1626904532202,
+        "duration" : 9159
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "bdeb81cebc7c3af3ec072e836f4ccd81"
+  }, {
+    "name" : "ru.netology.cases.MainPageTest",
+    "children" : [ {
+      "name" : "Презентация главной страницы",
+      "uid" : "3464f46fc1431d1a",
+      "parentUid" : "e7f45c8fd798eed440c6cf8c4ffbfa57",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626904532312,
+        "stop" : 1626904532783,
+        "duration" : 471
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Страница \"Путешествие дня\" доступна по адресу localhost:8080",
+      "uid" : "76fc8b4fe0586f32",
+      "parentUid" : "e7f45c8fd798eed440c6cf8c4ffbfa57",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626904532789,
+        "stop" : 1626904532952,
+        "duration" : 163
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e7f45c8fd798eed440c6cf8c4ffbfa57"
+  } ],
+  "name" : "suites"
+}

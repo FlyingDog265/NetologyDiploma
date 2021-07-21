@@ -1,0 +1,189 @@
+{
+  "uid" : "3464f46fc1431d1a",
+  "name" : "Презентация главной страницы",
+  "fullName" : "ru.netology.cases.MainPageTest.shouldCorrectPresentation",
+  "historyId" : "54cf9dccc2b6cc347721decf9cba506e",
+  "time" : {
+    "start" : 1626904532312,
+    "stop" : 1626904532783,
+    "duration" : 471
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Хедер отображается на главной странице",
+      "time" : {
+        "start" : 1626904532382,
+        "stop" : 1626904532451,
+        "duration" : 69
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Заголовок тура содержит текст Марракэш",
+      "time" : {
+        "start" : 1626904532452,
+        "stop" : 1626904532542,
+        "duration" : 90
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "title",
+        "value" : "Марракэш"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверка текстов списка в презентации тура",
+      "time" : {
+        "start" : 1626904532542,
+        "stop" : 1626904532647,
+        "duration" : 105
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text1",
+        "value" : "Сказочный Восток"
+      }, {
+        "name" : "text2",
+        "value" : "33 360 миль на карту"
+      }, {
+        "name" : "text3",
+        "value" : "До 7% на остаток по счёту"
+      }, {
+        "name" : "text4",
+        "value" : "Всего 45 000 руб.!"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Кнопка 'Купить' отображается на странице",
+      "time" : {
+        "start" : 1626904532647,
+        "stop" : 1626904532715,
+        "duration" : 68
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Кнопка 'Купить в кредит' отображается на странице",
+      "time" : {
+        "start" : 1626904532715,
+        "stop" : 1626904532783,
+        "duration" : 68
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Основной прогон"
+  }, {
+    "name" : "story",
+    "value" : "Главная страница"
+  }, {
+    "name" : "host",
+    "value" : "fv-az150-373"
+  }, {
+    "name" : "thread",
+    "value" : "3867@fv-az150-373.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.netology.cases.MainPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.netology.cases.MainPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldCorrectPresentation"
+  }, {
+    "name" : "suite",
+    "value" : "ru.netology.cases.MainPageTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "1",
+    "url" : "https://github.com/FlyingDog265/NetologyDiploma/issues/1",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "606fcd23c56cbfad",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/5//#testresult/606fcd23c56cbfad",
+        "status" : "failed",
+        "statusDetails" : "Element should have text 'Марракеш' {div[class*='cardPreview'] h3}\nElement: '<h3 class=\"heading heading_size_m heading_theme_alfa-on-white Order_cardHeading__2PyrG\">Марракэш</h3>'\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1626901769661.0.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1626901769661.0.html\nTimeout: 4 s.",
+        "time" : {
+          "start" : 1626901758536,
+          "stop" : 1626901769828,
+          "duration" : 11292
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3464f46fc1431d1a.json",
+  "parameterValues" : [ ]
+}

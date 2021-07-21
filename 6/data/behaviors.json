@@ -1,0 +1,56 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "Основной прогон",
+    "children" : [ {
+      "name" : "Покупка тура по карте",
+      "children" : [ {
+        "name" : "Заявка \"Оплата по карте\", заполненная валидными данными карты со статусом Approved успешно одобрена банком",
+        "uid" : "335cce6b801b73f7",
+        "parentUid" : "66e81843c02591323730f608f7228117",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626904523043,
+          "stop" : 1626904532202,
+          "duration" : 9159
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "66e81843c02591323730f608f7228117"
+    }, {
+      "name" : "Главная страница",
+      "children" : [ {
+        "name" : "Презентация главной страницы",
+        "uid" : "3464f46fc1431d1a",
+        "parentUid" : "13e6bc7213bbc898dfbd42c2252a6566",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626904532312,
+          "stop" : 1626904532783,
+          "duration" : 471
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Страница \"Путешествие дня\" доступна по адресу localhost:8080",
+        "uid" : "76fc8b4fe0586f32",
+        "parentUid" : "13e6bc7213bbc898dfbd42c2252a6566",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626904532789,
+          "stop" : 1626904532952,
+          "duration" : 163
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "13e6bc7213bbc898dfbd42c2252a6566"
+    } ],
+    "uid" : "558e511af958c588a0e41965e8643035"
+  } ],
+  "name" : "behaviors"
+}
