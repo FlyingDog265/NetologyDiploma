@@ -1,7 +1,7 @@
 ### Дипломный проект профессии «Тестировщик» ###
 
-![example workflow](https://github.com/FlyingDog265/NetologyDiploma/actions/workflows/mySQLTestsCI.yml/badge.svg)
-![example workflow](https://github.com/FlyingDog265/NetologyDiploma/actions/workflows/postgressTestsCI.yml/badge.svg)
+[![example workflow](https://github.com/FlyingDog265/NetologyDiploma/actions/workflows/mySQLTestsCI.yml/badge.svg)](https://github.com/FlyingDog265/NetologyDiploma/actions/workflows/mySQLTestsCI.yml)
+[![example workflow](https://github.com/FlyingDog265/NetologyDiploma/actions/workflows/postgressTestsCI.yml/badge.svg)](https://github.com/FlyingDog265/NetologyDiploma/actions/workflows/postgressTestsCI.yml)
 
 [![Allure report](https://img.shields.io/badge/Allure%20Report-deployed-yellowgreen)](https://flyingdog265.github.io/NetologyDiploma/)
 
