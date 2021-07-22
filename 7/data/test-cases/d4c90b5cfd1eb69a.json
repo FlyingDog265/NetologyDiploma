@@ -1,0 +1,206 @@
+{
+  "uid" : "d4c90b5cfd1eb69a",
+  "name" : "Заявка \"Кредит по данным карты\", заполненная невалидными данными карты, отклонена банком",
+  "fullName" : "ru.netology.cases.OrderByCredit.shouldDeclinedWithInvalidCard",
+  "historyId" : "c902fac65cab5b36607860626dace878",
+  "time" : {
+    "start" : 1626975613921,
+    "stop" : 1626975622571,
+    "duration" : 8650
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Выбрать оплату в кредит",
+      "time" : {
+        "start" : 1626975613954,
+        "stop" : 1626975614119,
+        "duration" : 165
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Кнопка 'Купить в кредит' отображается на странице",
+        "time" : {
+          "start" : 1626975613954,
+          "stop" : 1626975614020,
+          "duration" : 66
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Нажать на кнопку 'Купить в кредит'",
+        "time" : {
+          "start" : 1626975614021,
+          "stop" : 1626975614074,
+          "duration" : 53
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Заголовок под кнопками содержит текст Кредит по данным карты",
+        "time" : {
+          "start" : 1626975614074,
+          "stop" : 1626975614119,
+          "duration" : 45
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "text",
+          "value" : "Кредит по данным карты"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Заполнить данные карты",
+      "time" : {
+        "start" : 1626975614119,
+        "stop" : 1626975614652,
+        "duration" : 533
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "card",
+        "value" : "ru.netology.helpers.Card@60671757"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Нажать на кнопку 'Продолжить'",
+      "time" : {
+        "start" : 1626975614652,
+        "stop" : 1626975614705,
+        "duration" : 53
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Отображается сообщение об ошибке отправки",
+      "time" : {
+        "start" : 1626975614705,
+        "stop" : 1626975622513,
+        "duration" : 7808
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Сообщение об ошибке содержит заголовок Ошибка и текст Ошибка! Банк отказал в проведении операции.",
+      "time" : {
+        "start" : 1626975622514,
+        "stop" : 1626975622571,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "title",
+        "value" : "Ошибка"
+      }, {
+        "name" : "text",
+        "value" : "Ошибка! Банк отказал в проведении операции."
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Покупка тура в кредит"
+  }, {
+    "name" : "feature",
+    "value" : "Основной прогон"
+  }, {
+    "name" : "host",
+    "value" : "fv-az121-165"
+  }, {
+    "name" : "thread",
+    "value" : "3895@fv-az121-165.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.netology.cases.OrderByCredit"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.netology.cases.OrderByCredit"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDeclinedWithInvalidCard"
+  }, {
+    "name" : "suite",
+    "value" : "ru.netology.cases.OrderByCredit"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d4c90b5cfd1eb69a.json",
+  "parameterValues" : [ ]
+}

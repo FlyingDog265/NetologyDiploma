@@ -1,0 +1,203 @@
+{
+  "uid" : "63b4d0f544d7082e",
+  "name" : "Заявка \"Кредит по данным карты\" не отправляется со значением месяца, больше \"12\", в поле \"Месяц\"",
+  "fullName" : "ru.netology.cases.OrderByCredit.shouldNotSendWithTooBigMonth",
+  "historyId" : "d8b6b33e7a7fdadea38ed7b501c4f210",
+  "time" : {
+    "start" : 1626975622574,
+    "stop" : 1626975623661,
+    "duration" : 1087
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Выбрать оплату в кредит",
+      "time" : {
+        "start" : 1626975622615,
+        "stop" : 1626975622774,
+        "duration" : 159
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Кнопка 'Купить в кредит' отображается на странице",
+        "time" : {
+          "start" : 1626975622615,
+          "stop" : 1626975622635,
+          "duration" : 20
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Нажать на кнопку 'Купить в кредит'",
+        "time" : {
+          "start" : 1626975622635,
+          "stop" : 1626975622734,
+          "duration" : 99
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Заголовок под кнопками содержит текст Кредит по данным карты",
+        "time" : {
+          "start" : 1626975622734,
+          "stop" : 1626975622774,
+          "duration" : 40
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "text",
+          "value" : "Кредит по данным карты"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Заполнить данные карты",
+      "time" : {
+        "start" : 1626975622774,
+        "stop" : 1626975623475,
+        "duration" : 701
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "card",
+        "value" : "ru.netology.helpers.Card@431088e9"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Нажать на кнопку 'Продолжить'",
+      "time" : {
+        "start" : 1626975623475,
+        "stop" : 1626975623572,
+        "duration" : 97
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Сообщения об ошибке или успешной отправке не отображаются",
+      "time" : {
+        "start" : 1626975623572,
+        "stop" : 1626975623618,
+        "duration" : 46
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Отображается ошибка 'Неверно указан срок действия карты' в поле ввода месяца",
+      "time" : {
+        "start" : 1626975623618,
+        "stop" : 1626975623661,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "error",
+        "value" : "Неверно указан срок действия карты"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Основной прогон"
+  }, {
+    "name" : "story",
+    "value" : "Покупка тура в кредит"
+  }, {
+    "name" : "host",
+    "value" : "fv-az121-165"
+  }, {
+    "name" : "thread",
+    "value" : "3895@fv-az121-165.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.netology.cases.OrderByCredit"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.netology.cases.OrderByCredit"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldNotSendWithTooBigMonth"
+  }, {
+    "name" : "suite",
+    "value" : "ru.netology.cases.OrderByCredit"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "63b4d0f544d7082e.json",
+  "parameterValues" : [ ]
+}

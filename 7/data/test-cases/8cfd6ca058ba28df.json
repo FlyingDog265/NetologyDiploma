@@ -1,0 +1,215 @@
+{
+  "uid" : "8cfd6ca058ba28df",
+  "name" : "После отклоненной заявки \"Оплата по карте\", данные о заявке со статусом DECLINED сохраняются в базе данных",
+  "fullName" : "ru.netology.cases.DataBaseTest.shouldStoreDeclinedOrderByCardIntoDatabase",
+  "historyId" : "30c3ec15f062c47c0cd0c740d4238706",
+  "time" : {
+    "start" : 1626975495617,
+    "stop" : 1626975509878,
+    "duration" : 14261
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Очистить базу данных",
+      "time" : {
+        "start" : 1626975498831,
+        "stop" : 1626975499210,
+        "duration" : 379
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Оформить заявку \"Оплата по карте\", со статусом Declined",
+      "time" : {
+        "start" : 1626975499210,
+        "stop" : 1626975509831,
+        "duration" : 10621
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Выбрать оплату по карте",
+        "time" : {
+          "start" : 1626975499222,
+          "stop" : 1626975499535,
+          "duration" : 313
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Кнопка 'Купить' отображается на странице",
+          "time" : {
+            "start" : 1626975499222,
+            "stop" : 1626975499300,
+            "duration" : 78
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Нажать на кнопку 'Купить'",
+          "time" : {
+            "start" : 1626975499300,
+            "stop" : 1626975499450,
+            "duration" : 150
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Заголовок под кнопками содержит текст Оплата по карте",
+          "time" : {
+            "start" : 1626975499454,
+            "stop" : 1626975499534,
+            "duration" : 80
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "text",
+            "value" : "Оплата по карте"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 3,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Заполнить данные карты",
+        "time" : {
+          "start" : 1626975499535,
+          "stop" : 1626975500313,
+          "duration" : 778
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "card",
+          "value" : "ru.netology.helpers.Card@14598fca"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Нажать на кнопку 'Продолжить'",
+        "time" : {
+          "start" : 1626975500313,
+          "stop" : 1626975500376,
+          "duration" : 63
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Отображается сообщение об успешной отправке заявки",
+        "time" : {
+          "start" : 1626975500377,
+          "stop" : 1626975509831,
+          "duration" : 9454
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 7,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Перегруз и проверка данных"
+  }, {
+    "name" : "feature",
+    "value" : "База данных"
+  }, {
+    "name" : "host",
+    "value" : "fv-az121-165"
+  }, {
+    "name" : "thread",
+    "value" : "3895@fv-az121-165.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.netology.cases.DataBaseTest"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.netology.cases.DataBaseTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldStoreDeclinedOrderByCardIntoDatabase"
+  }, {
+    "name" : "suite",
+    "value" : "ru.netology.cases.DataBaseTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8cfd6ca058ba28df.json",
+  "parameterValues" : [ ]
+}
