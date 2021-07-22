@@ -6,8 +6,7 @@ import ru.netology.helpers.Card;
 
 import java.time.Duration;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.element;
 
@@ -39,7 +38,7 @@ public class OrderPage {
     }
 
     @Step("Нажать на кнопку 'Продолжить'")
-    public OrderPage sendData() {
+    public OrderPage clickContinue() {
         buttonContinue.click();
         return OrderPage.this;
     }
@@ -51,7 +50,7 @@ public class OrderPage {
     }
 
     @Step("Сообщение об успехе содержит заголовок {title} и текст {text}")
-    public OrderPage checkTextMessageApproved(String title, String text) {
+    public OrderPage compareTextMessageApproved(String title, String text) {
         messageApproved.$("*[class*='title']").shouldHave(text(title));
         messageApproved.$("*[class*='content']").shouldHave(text(text));
         return OrderPage.this;
@@ -59,14 +58,21 @@ public class OrderPage {
 
     @Step("Отображается сообщение об ошибке отправки")
     public OrderPage checkMessageDeclinedIsVisible() {
-        messageApproved.shouldBe(visible, duration);
+        messageDecline.shouldBe(visible, duration);
         return OrderPage.this;
     }
 
     @Step("Сообщение об ошибке содержит заголовок {title} и текст {text}")
-    public OrderPage checkTextMessageDeclined(String title, String text) {
+    public OrderPage compareTextMessageDeclined(String title, String text) {
         messageDecline.$("*[class*='title']").shouldHave(text(title));
         messageDecline.$("*[class*='content']").shouldHave(text(text));
+        return OrderPage.this;
+    }
+
+    @Step("Сообщения об ошибке или успешной отправке не отображаются")
+    public OrderPage checkMessagesNotVisible() {
+        messageApproved.shouldBe(not(visible));
+        messageDecline.shouldBe(not(visible));
         return OrderPage.this;
     }
 
@@ -101,7 +107,7 @@ public class OrderPage {
     }
 
     @Step("В пустых полях отображается ошибка '{error}")
-    public OrderPage shouldBeEmptyAllFieldsErrors(String error) {
+    public OrderPage checkAllEmptyFieldsErrors(String error) {
         checkErrorCardNumberMessage(error);
         checkErrorMonthMessage(error);
         checkErrorYearMessage(error);

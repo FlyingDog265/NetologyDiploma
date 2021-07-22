@@ -42,7 +42,6 @@ public class DbHelper {
     }
 
     private static String getOperationStatus(int amount, String statusSQL) {
-        String url = getDbUrl();
         var runner = new QueryRunner();
         String status = "";
         try (Connection conn = getConnection()) {
@@ -57,7 +56,7 @@ public class DbHelper {
         String statusSQL = "SELECT payment_entity.status "
                 + "FROM payment_entity "
                 + "INNER JOIN order_entity "
-                + "ON order_entity.payment_id = payment_entity.id "
+                + "ON order_entity.payment_id = payment_entity.transaction_id "
                 + "WHERE payment_entity.amount = ?;";
         return getOperationStatus(amount, statusSQL);
     }

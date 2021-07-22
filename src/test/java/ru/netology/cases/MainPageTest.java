@@ -34,7 +34,7 @@ public class MainPageTest {
     @DisplayName("Презентация главной страницы")
     void shouldCorrectPresentation() {
         mainPage.checkHeaderIsVisible()
-                .checkTextPreviewHeader("Марракэш")
+                .checkTextPreviewHeader("Марракеш")
                 .checkTextsPreviewList("Сказочный Восток", "33 360 миль на карту", "До 7% на остаток по счёту", "Всего 45 000 руб.!")
                 .checkButtonOrderByCardIsVisible()
                 .checkButtonOrderByCreditIsVisible();

@@ -11,8 +11,8 @@ import static com.codeborne.selenide.Selenide.open;
 import static ru.netology.helpers.CardHelper.*;
 
 @Feature("Основной прогон")
-@Story("Покупка тура по карте")
-public class OrderByCardTest {
+@Story("Покупка тура в кредит")
+public class OrderByCredit {
     private MainPage mainPage;
     private final String url = System.getProperty("app.url");
 
@@ -23,9 +23,9 @@ public class OrderByCardTest {
     }
 
     @Test
-    @DisplayName("Заявка \"Оплата по карте\", заполненная валидными данными карты со статусом Approved успешно одобрена банком")
+    @DisplayName("Заявка \"Кредит по данным карты\", заполненная валидными данными карты со статусом Approved успешно одобрена банком")
     public void shouldApprovedWithApprovedCard() {
-        mainPage.selectOrderByCard()
+        mainPage.selectOrderByCredit()
                 .setCardFields(getCardInfoWithApprovedCardNumber())
                 .clickContinue()
                 .checkMessageApprovedIsVisible()
@@ -33,9 +33,9 @@ public class OrderByCardTest {
     }
 
     @Test
-    @DisplayName("Заявка \"Оплата по карте\", заполненная данными карты со статусом Declined отклонена банком")
+    @DisplayName("Заявка \"Кредит по данным карты\", заполненная данными карты со статусом Declined отклонена банком")
     public void shouldDeclinedWithDeclinedCard() {
-        mainPage.selectOrderByCard()
+        mainPage.selectOrderByCredit()
                 .setCardFields(getCardInfoWithDeclinedCardNumber())
                 .clickContinue()
                 .checkMessageDeclinedIsVisible()
@@ -43,9 +43,9 @@ public class OrderByCardTest {
     }
 
     @Test
-    @DisplayName("Заявка \"Оплата по карте\", заполненная невалидными данными карты, отклонена банком")
+    @DisplayName("Заявка \"Кредит по данным карты\", заполненная невалидными данными карты, отклонена банком")
     public void shouldDeclinedWithInvalidCard() {
-        mainPage.selectOrderByCard()
+        mainPage.selectOrderByCredit()
                 .setCardFields(getCardInfoWithUnknownCardNumber())
                 .clickContinue()
                 .checkMessageDeclinedIsVisible()
@@ -53,18 +53,19 @@ public class OrderByCardTest {
     }
 
     @Test
-    @DisplayName("Пустая форма заявки \"Оплата по карте\" не отправляется в банк")
+    @DisplayName("Пустая форма заявки \"Кредит по данным карты\" не отправляется в банк")
     public void shouldNotSendEmptyFields() {
-        mainPage.selectOrderByCard()
+        mainPage.selectOrderByCredit()
                 .clickContinue()
                 .checkMessagesNotVisible()
                 .checkAllEmptyFieldsErrors("Поле обязательно для заполнения");
     }
 
+
     @Test
-    @DisplayName("Заявка \"Оплата по карте\" не отправляется с невалидным значением в поле \"Номер карты\"")
+    @DisplayName("Заявка \"Кредит по данным карты\" не отправляется с невалидным значением в поле \"Номер карты\"")
     public void shouldNotSendWithShortCardNumber() {
-        mainPage.selectOrderByCard()
+        mainPage.selectOrderByCredit()
                 .setCardFields(getCardInfoWithIncorrectCardNumber())
                 .clickContinue()
                 .checkMessagesNotVisible()
@@ -72,9 +73,9 @@ public class OrderByCardTest {
     }
 
     @Test
-    @DisplayName("Заявка \"Оплата по карте\" не отправляется со значением года прошлого периода в поле \"Год\"")
+    @DisplayName("Заявка \"Кредит по данным карты\" не отправляется со значением года прошлого периода в поле \"Год\"")
     public void shouldNotSendWithPastPeriod() {
-        mainPage.selectOrderByCard()
+        mainPage.selectOrderByCredit()
                 .setCardFields(getCardInfoWithTooSmallYear())
                 .clickContinue()
                 .checkMessagesNotVisible()
@@ -82,9 +83,9 @@ public class OrderByCardTest {
     }
 
     @Test
-    @DisplayName("Заявка \"Оплата по карте\" не отправляется со значением года далекого будущего периода в поле \"Год\"")
+    @DisplayName("Заявка \"Кредит по данным карты\" не отправляется со значением года далекого будущего периода в поле \"Год\"")
     public void shouldNotSendWithNextPeriod() {
-        mainPage.selectOrderByCard()
+        mainPage.selectOrderByCredit()
                 .setCardFields(getCardInfoWithTooBigYear())
                 .clickContinue()
                 .checkMessagesNotVisible()
@@ -92,9 +93,9 @@ public class OrderByCardTest {
     }
 
     @Test
-    @DisplayName("Заявка \"Оплата по карте\" не отправляется со значением месяца, больше \"12\", в поле \"Месяц\"")
+    @DisplayName("Заявка \"Кредит по данным карты\" не отправляется со значением месяца, больше \"12\", в поле \"Месяц\"")
     public void shouldNotSendWithTooBigMonth() {
-        mainPage.selectOrderByCard()
+        mainPage.selectOrderByCredit()
                 .setCardFields(getCardInfoWithTooBigMonth())
                 .clickContinue()
                 .checkMessagesNotVisible()
@@ -102,9 +103,9 @@ public class OrderByCardTest {
     }
 
     @Test
-    @DisplayName("Заявка \"Оплата по карте\" не отправляется со значением месяца, меньше \"01\", в поле \"Месяц\"")
+    @DisplayName("Заявка \"Кредит по данным карты\" не отправляется со значением месяца, меньше \"01\", в поле \"Месяц\"")
     public void shouldNotSendWithTooSmallMonth() {
-        mainPage.selectOrderByCard()
+        mainPage.selectOrderByCredit()
                 .setCardFields(getCardInfoWithTooSmallMonth())
                 .clickContinue()
                 .checkMessagesNotVisible()
@@ -112,9 +113,9 @@ public class OrderByCardTest {
     }
 
     @Test
-    @DisplayName("Заявка \"Оплата по карте\" не отправляется с невалидным значением в поле \"CVC/CVV\"")
+    @DisplayName("Заявка \"Кредит по данным карты\" не отправляется с невалидным значением в поле \"CVC/CVV\"")
     public void shouldNotSendWithIncorrectCvc() {
-        mainPage.selectOrderByCard()
+        mainPage.selectOrderByCredit()
                 .setCardFields(getCardInfoWithIncorrectCvc())
                 .clickContinue()
                 .checkMessagesNotVisible()
@@ -122,9 +123,9 @@ public class OrderByCardTest {
     }
 
     @Test
-    @DisplayName("Заявка \"Оплата по карте\" не отправляется с символами на кириллице в поле \"Владелец\"")
+    @DisplayName("Заявка \"Кредит по данным карты\" не отправляется с символами на кириллице в поле \"Владелец\"")
     public void shouldNotSendWithCyrillicOwner() {
-        mainPage.selectOrderByCard()
+        mainPage.selectOrderByCredit()
                 .setCardFields(getCardInfoWithIncorrectOwnerByCyrillic())
                 .clickContinue()
                 .checkMessagesNotVisible()

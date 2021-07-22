@@ -47,9 +47,14 @@ public class CardHelper {
                 approvedCardNumber, "13", validCardYear, validCardOwner, validCardCvcCvv);
     }
 
-    public static Card getCardInfoWithIncorrectCardNumberAndCvc() {
+    public static Card getCardInfoWithIncorrectCardNumber() {
         return new Card(
-                "5555 5555", "13", validCardYear, validCardOwner, "0");
+                "5555 5555", validCardMonth, validCardYear, validCardOwner, validCardCvcCvv);
+    }
+
+    public static Card getCardInfoWithIncorrectCvc() {
+        return new Card(
+                approvedCardNumber, validCardMonth, validCardYear, validCardOwner, "0");
     }
 
     public static Card getCardInfoWithIncorrectOwnerByCyrillic() {
