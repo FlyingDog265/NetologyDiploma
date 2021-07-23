@@ -1,0 +1,213 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Статус не соответствует ожидаемому значению ==> expected: <APPROVED> but was: <null>",
+      "children" : [ {
+        "name" : "После успешной заявки \"Купить в кредит\", данные о платеже со статусом APPROVED сохраняются в базе данных",
+        "uid" : "cc6cd44bd6573245",
+        "parentUid" : "91b4dcdbde898b0d73bdb93803b9fa4c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627029673447,
+          "stop" : 1627029684336,
+          "duration" : 10889
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "91b4dcdbde898b0d73bdb93803b9fa4c"
+    }, {
+      "name" : "Статус не соответствует ожидаемому значению ==> expected: <DECLINED> but was: <null>",
+      "children" : [ {
+        "name" : "После отклоненной заявки \"Купить в кредит\", данные о заявке со статусом DECLINED сохраняются в базе данных",
+        "uid" : "8883000d9dba85c5",
+        "parentUid" : "970eb7cb6ddc7d3e17818b3dc4a35c6b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627029684348,
+          "stop" : 1627029687792,
+          "duration" : 3444
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "970eb7cb6ddc7d3e17818b3dc4a35c6b"
+    }, {
+      "name" : "Element should be visible {div[class*='notification_status_error']}\nElement: '<div class=\"notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\" displayed:false></div>'\nActual value: visible:false\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029709939.0.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029709939.0.html\nTimeout: 20 s.",
+      "children" : [ {
+        "name" : "Заявка \"Оплата по карте\", заполненная данными карты со статусом Declined отклонена банком",
+        "uid" : "7f1e6ee9ccd80354",
+        "parentUid" : "07e0548e3246512f09139033e180ddb1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627029688969,
+          "stop" : 1627029710105,
+          "duration" : 21136
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "07e0548e3246512f09139033e180ddb1"
+    }, {
+      "name" : "Element should have text 'Поле обязательно для заполнения' {fieldset div:nth-of-type(1) span[class='input__sub']}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029714599.1.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029714599.1.html\nTimeout: 4 s.",
+      "children" : [ {
+        "name" : "Пустая форма заявки \"Оплата по карте\" не отправляется в банк",
+        "uid" : "ac6b7e5f0f3aa759",
+        "parentUid" : "035a32545d73fb6bff59affef8624ac3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627029710112,
+          "stop" : 1627029714754,
+          "duration" : 4642
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "035a32545d73fb6bff59affef8624ac3"
+    }, {
+      "name" : "Element not found {fieldset div:nth-of-type(2) > span > span:nth-of-type(1) span[class='input__sub']}\nExpected: visible\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029719769.2.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029719769.2.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"fieldset div:nth-of-type(2) > span > span:nth-of-type(1) span[class='input__sub']\"}",
+      "children" : [ {
+        "name" : "Заявка \"Оплата по карте\" не отправляется со значением месяца, меньше \"01\", в поле \"Месяц\"",
+        "uid" : "6ebc65eeb10c86bb",
+        "parentUid" : "106545c643757c9c0076c093ee302b3e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627029714772,
+          "stop" : 1627029719937,
+          "duration" : 5165
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "106545c643757c9c0076c093ee302b3e"
+    }, {
+      "name" : "Element should be visible {div[class*='notification_status_ok']}\nElement: '<div class=\"notification notification_status_ok notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\" displayed:false></div>'\nActual value: visible:false\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029751249.3.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029751249.3.html\nTimeout: 20 s.",
+      "children" : [ {
+        "name" : "Заявка \"Оплата по карте\", заполненная валидными данными карты со статусом Approved успешно одобрена банком",
+        "uid" : "f9f21bfd31d9e62b",
+        "parentUid" : "8dfdfb23f6c47c0b0302961dbbed2e22",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627029730335,
+          "stop" : 1627029751384,
+          "duration" : 21049
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8dfdfb23f6c47c0b0302961dbbed2e22"
+    }, {
+      "name" : "Element not found {fieldset div:nth-of-type(3) > span > span:nth-of-type(1) span[class='input__sub']}\nExpected: visible\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029757668.4.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029757668.4.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"fieldset div:nth-of-type(3) > span > span:nth-of-type(1) span[class='input__sub']\"}",
+      "children" : [ {
+        "name" : "Заявка \"Оплата по карте\" не отправляется с символами на кириллице в поле \"Владелец\"",
+        "uid" : "7130335a6d0c4543",
+        "parentUid" : "dc373d3639bbadfa3cbd1ac152f1aab7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627029752543,
+          "stop" : 1627029757883,
+          "duration" : 5340
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "dc373d3639bbadfa3cbd1ac152f1aab7"
+    }, {
+      "name" : "Element should be visible {div[class*='notification_status_error']}\nElement: '<div class=\"notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\" displayed:false></div>'\nActual value: visible:false\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029781029.5.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029781029.5.html\nTimeout: 20 s.",
+      "children" : [ {
+        "name" : "Заявка \"Кредит по данным карты\", заполненная данными карты со статусом Declined отклонена банком",
+        "uid" : "253047a55055f9a8",
+        "parentUid" : "c83f468a4e714171af37ec44e218beb9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627029760132,
+          "stop" : 1627029781182,
+          "duration" : 21050
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c83f468a4e714171af37ec44e218beb9"
+    }, {
+      "name" : "Element should have text 'Поле обязательно для заполнения' {fieldset div:nth-of-type(1) span[class='input__sub']}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029785914.6.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029785914.6.html\nTimeout: 4 s.",
+      "children" : [ {
+        "name" : "Пустая форма заявки \"Кредит по данным карты\" не отправляется в банк",
+        "uid" : "6f27931580984025",
+        "parentUid" : "53902d84d062c74bdca3d7ab38ffb858",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627029781187,
+          "stop" : 1627029786067,
+          "duration" : 4880
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "53902d84d062c74bdca3d7ab38ffb858"
+    }, {
+      "name" : "Element not found {fieldset div:nth-of-type(2) > span > span:nth-of-type(1) span[class='input__sub']}\nExpected: visible\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029791013.7.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029791013.7.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"fieldset div:nth-of-type(2) > span > span:nth-of-type(1) span[class='input__sub']\"}",
+      "children" : [ {
+        "name" : "Заявка \"Кредит по данным карты\" не отправляется со значением месяца, меньше \"01\", в поле \"Месяц\"",
+        "uid" : "acb2756de121234f",
+        "parentUid" : "807e03f58f163292edfb5e1a7557a4f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627029786071,
+          "stop" : 1627029791169,
+          "duration" : 5098
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "807e03f58f163292edfb5e1a7557a4f4"
+    }, {
+      "name" : "Element not found {fieldset div:nth-of-type(3) > span > span:nth-of-type(1) span[class='input__sub']}\nExpected: visible\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029811529.8.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029811529.8.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"fieldset div:nth-of-type(3) > span > span:nth-of-type(1) span[class='input__sub']\"}",
+      "children" : [ {
+        "name" : "Заявка \"Кредит по данным карты\" не отправляется с символами на кириллице в поле \"Владелец\"",
+        "uid" : "31f691135a912e43",
+        "parentUid" : "3ac7cbd0700389aadb42c15d0ef20204",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627029806372,
+          "stop" : 1627029811721,
+          "duration" : 5349
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3ac7cbd0700389aadb42c15d0ef20204"
+    }, {
+      "name" : "Element should have text 'Марракеш' {div[class*='cardPreview'] h3}\nElement: '<h3 class=\"heading heading_size_m heading_theme_alfa-on-white Order_cardHeading__2PyrG\">Марракэш</h3>'\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029817010.9.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627029817010.9.html\nTimeout: 4 s.",
+      "children" : [ {
+        "name" : "Презентация главной страницы",
+        "uid" : "a50b7fba03ea73",
+        "parentUid" : "01aea30139956016c93db0dddebd5f6e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627029812865,
+          "stop" : 1627029817146,
+          "duration" : 4281
+        },
+        "flaky" : true,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "01aea30139956016c93db0dddebd5f6e"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
