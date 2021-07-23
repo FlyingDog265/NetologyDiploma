@@ -1,7 +1,5 @@
 package ru.netology.helpers;
 
-import io.qameta.allure.Step;
-
 public class CardHelper {
 
     private CardHelper() {
@@ -14,13 +12,11 @@ public class CardHelper {
     private static final String validCardOwner = "Ivanov Ivan";
     private static final String validCardCvcCvv = "999";
 
-    @Step("Карта с данными в статусе Approved")
     public static Card getCardInfoWithApprovedCardNumber() {
         return new Card(
                 approvedCardNumber, validCardMonth, validCardYear, validCardOwner, validCardCvcCvv);
     }
 
-    @Step("Карта с данными в статусе Declined")
     public static Card getCardInfoWithDeclinedCardNumber() {
         return new Card(
                 declinedCardNumber, validCardMonth, validCardYear, validCardOwner, validCardCvcCvv);

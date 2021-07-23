@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.element;
 
 @SuppressWarnings("UnusedReturnValue")
 public class OrderPage {
-    private final Duration duration = Duration.ofSeconds(20);
+    private final Duration duration = Duration.ofSeconds(30);
     private final SelenideElement buttonContinue = element(withText("Продолжить")),
             fieldCardNumber = element("fieldset div:nth-of-type(1) input"),
             fieldMonth = element("fieldset div:nth-of-type(2) > span > span:nth-of-type(1) input"),
@@ -24,6 +24,7 @@ public class OrderPage {
             errorYear = element("fieldset div:nth-of-type(2) > span > span:nth-of-type(2) span[class='input__sub']"),
             errorOwner = element("fieldset div:nth-of-type(3) > span > span:nth-of-type(1) span[class='input__sub']"),
             errorCvcCvv = element("fieldset div:nth-of-type(3) > span > span:nth-of-type(2) span[class='input__sub']");
+    private final SelenideElement notification = element("div[class*='notification_status']");
     private final SelenideElement messageApproved = element("div[class*='notification_status_ok']");
     private final SelenideElement messageDecline = element("div[class*='notification_status_error']");
 
@@ -40,6 +41,12 @@ public class OrderPage {
     @Step("Нажать на кнопку 'Продолжить'")
     public OrderPage clickContinue() {
         buttonContinue.click();
+        return OrderPage.this;
+    }
+
+    @Step("Отображается сообщение об отправке заявки")
+    public OrderPage checkNotificationIsVisible() {
+        notification.shouldBe(visible, duration);
         return OrderPage.this;
     }
 

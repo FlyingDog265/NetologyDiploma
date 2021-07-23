@@ -41,35 +41,58 @@ public class DbHelper {
         }
     }
 
-    private static String getOperationStatus(int amount, String statusSQL) {
+    private static String getOperationStatus(String statusSQL) {
         var runner = new QueryRunner();
         String status = "";
         try (Connection conn = getConnection()) {
-            status = runner.query(conn, statusSQL, new ScalarHandler<>(), amount);
+            status = runner.query(conn, statusSQL, new ScalarHandler<>());
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
         return status;
     }
 
-    public static String getPaymentInfo(int amount) {
-        String statusSQL = "SELECT payment_entity.status "
-                + "FROM payment_entity "
-                + "INNER JOIN order_entity "
-                + "ON order_entity.payment_id = payment_entity.transaction_id "
-                + "WHERE payment_entity.amount = ?;";
-        return getOperationStatus(amount, statusSQL);
+    private static int getOperationAmount(String amountSQL) {
+        var runner = new QueryRunner();
+        int amount = 0;
+        try (Connection conn = getConnection()) {
+            amount = runner.query(conn, amountSQL, new ScalarHandler<>());
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+        return amount;
     }
 
-    public static String getCreditInfo(int amount) {
+    public static int getPaymentAmountInfo() {
+        String amountSQL = "SELECT payment_entity.amount "
+                + "FROM payment_entity "
+                + "INNER JOIN order_entity "
+                + "ON order_entity.payment_id = payment_entity.transaction_id";
+        return getOperationAmount(amountSQL);
+    }
+
+    public static int getCreditAmountInfo() {
+        String amountSQL = "SELECT credit_request_entity.amount "
+                + "FROM credit_request_entity "
+                + "INNER JOIN order_entity "
+                + "ON credit_request_entity.bank_id = order_entity.payment_id";
+        return getOperationAmount(amountSQL);
+    }
+
+    public static String getPaymentStatusInfo() {
         String statusSQL = "SELECT payment_entity.status "
                 + "FROM payment_entity "
                 + "INNER JOIN order_entity "
-                + "ON payment_entity.id = order_entity.payment_id "
-                + "INNER JOIN credit_request_entity "
-                + "ON order_entity.credit_id = credit_request_entity.id "
-                + "WHERE payment_entity.amount = ?;";
-        return getOperationStatus(amount, statusSQL);
+                + "ON order_entity.payment_id = payment_entity.transaction_id ";
+        return getOperationStatus(statusSQL);
+    }
+
+    public static String getCreditStatusInfo() {
+        String statusSQL = "SELECT credit_request_entity.status "
+                + "FROM credit_request_entity "
+                + "INNER JOIN order_entity "
+                + "ON credit_request_entity.bank_id = order_entity.payment_id";
+        return getOperationStatus(statusSQL);
     }
 }
 
