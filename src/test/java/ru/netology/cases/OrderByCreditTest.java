@@ -11,8 +11,7 @@ import ru.netology.pages.MainPage;
 import static com.codeborne.selenide.Selenide.open;
 import static ru.netology.helpers.CardHelper.*;
 
-@Feature("Основной прогон")
-@Story("Покупка тура в кредит")
+@Feature("Покупка тура в кредит")
 public class OrderByCreditTest {
     private MainPage mainPage;
     private final String url = System.getProperty("app.url");
@@ -24,6 +23,7 @@ public class OrderByCreditTest {
     }
 
     @Test
+    @Story("Отправка данных")
     @DisplayName("Заявка \"Кредит по данным карты\", заполненная валидными данными карты со статусом Approved успешно одобрена банком")
     public void shouldApprovedWithApprovedCard() {
         mainPage.selectOrderByCredit()
@@ -34,6 +34,7 @@ public class OrderByCreditTest {
     }
 
     @Test
+    @Story("Отправка данных")
     @Issue("9")
     @DisplayName("Заявка \"Кредит по данным карты\", заполненная данными карты со статусом Declined отклонена банком")
     public void shouldDeclinedWithDeclinedCard() {
@@ -45,6 +46,7 @@ public class OrderByCreditTest {
     }
 
     @Test
+    @Story("Отправка данных")
     @DisplayName("Заявка \"Кредит по данным карты\", заполненная невалидными данными карты, отклонена банком")
     public void shouldDeclinedWithInvalidCard() {
         mainPage.selectOrderByCredit()
@@ -55,6 +57,7 @@ public class OrderByCreditTest {
     }
 
     @Test
+    @Story("Валидация полей")
     @Issue("11")
     @DisplayName("Ошибки валидации не отображаются при заполнении полей валидными данными")
     public void shouldNotVisibleValidatedErrorsAfterFillValidData() {
@@ -66,6 +69,7 @@ public class OrderByCreditTest {
     }
 
     @Test
+    @Story("Валидация полей")
     @Issue("10")
     @DisplayName("Пустая форма заявки \"Кредит по данным карты\" не отправляется в банк")
     public void shouldNotSendEmptyFields() {
@@ -77,6 +81,7 @@ public class OrderByCreditTest {
 
 
     @Test
+    @Story("Валидация полей")
     @DisplayName("Заявка \"Кредит по данным карты\" не отправляется с невалидным значением в поле \"Номер карты\"")
     public void shouldNotSendWithShortCardNumber() {
         mainPage.selectOrderByCredit()
@@ -87,6 +92,7 @@ public class OrderByCreditTest {
     }
 
     @Test
+    @Story("Валидация полей")
     @DisplayName("Заявка \"Кредит по данным карты\" не отправляется со значением года прошлого периода в поле \"Год\"")
     public void shouldNotSendWithPastPeriod() {
         mainPage.selectOrderByCredit()
@@ -97,6 +103,7 @@ public class OrderByCreditTest {
     }
 
     @Test
+    @Story("Валидация полей")
     @DisplayName("Заявка \"Кредит по данным карты\" не отправляется со значением года далекого будущего периода в поле \"Год\"")
     public void shouldNotSendWithNextPeriod() {
         mainPage.selectOrderByCredit()
@@ -107,6 +114,7 @@ public class OrderByCreditTest {
     }
 
     @Test
+    @Story("Валидация полей")
     @DisplayName("Заявка \"Кредит по данным карты\" не отправляется со значением месяца, больше \"12\", в поле \"Месяц\"")
     public void shouldNotSendWithTooBigMonth() {
         mainPage.selectOrderByCredit()
@@ -117,6 +125,7 @@ public class OrderByCreditTest {
     }
 
     @Test
+    @Story("Валидация полей")
     @Issue("8")
     @DisplayName("Заявка \"Кредит по данным карты\" не отправляется со значением месяца, меньше \"01\", в поле \"Месяц\"")
     public void shouldNotSendWithTooSmallMonth() {
@@ -128,6 +137,7 @@ public class OrderByCreditTest {
     }
 
     @Test
+    @Story("Валидация полей")
     @DisplayName("Заявка \"Кредит по данным карты\" не отправляется с невалидным значением в поле \"CVC/CVV\"")
     public void shouldNotSendWithIncorrectCvc() {
         mainPage.selectOrderByCredit()
@@ -138,6 +148,7 @@ public class OrderByCreditTest {
     }
 
     @Test
+    @Story("Валидация полей")
     @Issue("7")
     @DisplayName("Заявка \"Кредит по данным карты\" не отправляется с символами на кириллице в поле \"Владелец\"")
     public void shouldNotSendWithCyrillicOwner() {

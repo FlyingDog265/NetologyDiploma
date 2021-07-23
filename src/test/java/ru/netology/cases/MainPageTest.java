@@ -10,8 +10,8 @@ import ru.netology.pages.MainPage;
 
 import static com.codeborne.selenide.Selenide.open;
 
-@Feature("Основной прогон")
-@Story("Главная страница")
+@Feature("Главная страница")
+@Story("Отображение элементов страницы")
 public class MainPageTest {
     private MainPage mainPage;
     private final String url = System.getProperty("app.url");

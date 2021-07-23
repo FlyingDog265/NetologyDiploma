@@ -11,8 +11,7 @@ import ru.netology.pages.MainPage;
 import static com.codeborne.selenide.Selenide.open;
 import static ru.netology.helpers.CardHelper.*;
 
-@Feature("Основной прогон")
-@Story("Покупка тура по карте")
+@Feature("Покупка тура по карте")
 public class OrderByCardTest {
     private MainPage mainPage;
     private final String url = System.getProperty("app.url");
@@ -24,6 +23,7 @@ public class OrderByCardTest {
     }
 
     @Test
+    @Story("Отправка данных")
     @DisplayName("Заявка \"Оплата по карте\", заполненная валидными данными карты со статусом Approved успешно одобрена банком")
     public void shouldApprovedWithApprovedCard() {
         mainPage.selectOrderByCard()
@@ -34,6 +34,7 @@ public class OrderByCardTest {
     }
 
     @Test
+    @Story("Отправка данных")
     @Issue("9")
     @DisplayName("Заявка \"Оплата по карте\", заполненная данными карты со статусом Declined отклонена банком")
     public void shouldDeclinedWithDeclinedCard() {
@@ -45,6 +46,7 @@ public class OrderByCardTest {
     }
 
     @Test
+    @Story("Отправка данных")
     @DisplayName("Заявка \"Оплата по карте\", заполненная невалидными данными карты, отклонена банком")
     public void shouldDeclinedWithInvalidCard() {
         mainPage.selectOrderByCard()
@@ -55,6 +57,7 @@ public class OrderByCardTest {
     }
 
     @Test
+    @Story("Валидация полей")
     @Issue("11")
     @DisplayName("Ошибки валидации не отображаются при заполнении полей валидными данными")
     public void shouldNotVisibleValidatedErrorsAfterFillValidData() {
@@ -66,6 +69,7 @@ public class OrderByCardTest {
     }
 
     @Test
+    @Story("Валидация полей")
     @Issue("10")
     @DisplayName("Пустая форма заявки \"Оплата по карте\" не отправляется в банк")
     public void shouldNotSendEmptyFields() {
@@ -76,6 +80,7 @@ public class OrderByCardTest {
     }
 
     @Test
+    @Story("Валидация полей")
     @DisplayName("Заявка \"Оплата по карте\" не отправляется с невалидным значением в поле \"Номер карты\"")
     public void shouldNotSendWithShortCardNumber() {
         mainPage.selectOrderByCard()
@@ -86,6 +91,7 @@ public class OrderByCardTest {
     }
 
     @Test
+    @Story("Валидация полей")
     @DisplayName("Заявка \"Оплата по карте\" не отправляется со значением года прошлого периода в поле \"Год\"")
     public void shouldNotSendWithPastPeriod() {
         mainPage.selectOrderByCard()
@@ -96,6 +102,7 @@ public class OrderByCardTest {
     }
 
     @Test
+    @Story("Валидация полей")
     @DisplayName("Заявка \"Оплата по карте\" не отправляется со значением года далекого будущего периода в поле \"Год\"")
     public void shouldNotSendWithNextPeriod() {
         mainPage.selectOrderByCard()
@@ -106,6 +113,7 @@ public class OrderByCardTest {
     }
 
     @Test
+    @Story("Валидация полей")
     @DisplayName("Заявка \"Оплата по карте\" не отправляется со значением месяца, больше \"12\", в поле \"Месяц\"")
     public void shouldNotSendWithTooBigMonth() {
         mainPage.selectOrderByCard()
@@ -116,6 +124,7 @@ public class OrderByCardTest {
     }
 
     @Test
+    @Story("Валидация полей")
     @Issue("8")
     @DisplayName("Заявка \"Оплата по карте\" не отправляется со значением месяца, меньше \"01\", в поле \"Месяц\"")
     public void shouldNotSendWithTooSmallMonth() {
@@ -127,6 +136,7 @@ public class OrderByCardTest {
     }
 
     @Test
+    @Story("Валидация полей")
     @DisplayName("Заявка \"Оплата по карте\" не отправляется с невалидным значением в поле \"CVC/CVV\"")
     public void shouldNotSendWithIncorrectCvc() {
         mainPage.selectOrderByCard()
@@ -137,6 +147,7 @@ public class OrderByCardTest {
     }
 
     @Test
+    @Story("Валидация полей")
     @Issue("7")
     @DisplayName("Заявка \"Оплата по карте\" не отправляется с символами на кириллице в поле \"Владелец\"")
     public void shouldNotSendWithCyrillicOwner() {
