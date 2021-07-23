@@ -1,6 +1,7 @@
 package ru.netology.cases;
 
 import io.qameta.allure.Feature;
+import io.qameta.allure.Issue;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -12,7 +13,7 @@ import static ru.netology.helpers.CardHelper.*;
 
 @Feature("Основной прогон")
 @Story("Покупка тура в кредит")
-public class OrderByCredit {
+public class OrderByCreditTest {
     private MainPage mainPage;
     private final String url = System.getProperty("app.url");
 
@@ -33,6 +34,7 @@ public class OrderByCredit {
     }
 
     @Test
+    @Issue("9")
     @DisplayName("Заявка \"Кредит по данным карты\", заполненная данными карты со статусом Declined отклонена банком")
     public void shouldDeclinedWithDeclinedCard() {
         mainPage.selectOrderByCredit()
@@ -53,6 +55,18 @@ public class OrderByCredit {
     }
 
     @Test
+    @Issue("11")
+    @DisplayName("Ошибки валидации не отображаются при заполнении полей валидными данными")
+    public void shouldNotVisibleValidatedErrorsAfterFillValidData() {
+        mainPage.selectOrderByCredit()
+                .clickContinue()
+                .checkAllFieldsErrorsIsVisible()
+                .setCardFields(getCardInfoWithApprovedCardNumber())
+                .checkAllFieldsErrorsIsNotVisible();
+    }
+
+    @Test
+    @Issue("10")
     @DisplayName("Пустая форма заявки \"Кредит по данным карты\" не отправляется в банк")
     public void shouldNotSendEmptyFields() {
         mainPage.selectOrderByCredit()
@@ -103,6 +117,7 @@ public class OrderByCredit {
     }
 
     @Test
+    @Issue("8")
     @DisplayName("Заявка \"Кредит по данным карты\" не отправляется со значением месяца, меньше \"01\", в поле \"Месяц\"")
     public void shouldNotSendWithTooSmallMonth() {
         mainPage.selectOrderByCredit()
@@ -123,6 +138,7 @@ public class OrderByCredit {
     }
 
     @Test
+    @Issue("7")
     @DisplayName("Заявка \"Кредит по данным карты\" не отправляется с символами на кириллице в поле \"Владелец\"")
     public void shouldNotSendWithCyrillicOwner() {
         mainPage.selectOrderByCredit()

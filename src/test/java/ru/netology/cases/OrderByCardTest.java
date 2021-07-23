@@ -1,6 +1,7 @@
 package ru.netology.cases;
 
 import io.qameta.allure.Feature;
+import io.qameta.allure.Issue;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -33,6 +34,7 @@ public class OrderByCardTest {
     }
 
     @Test
+    @Issue("9")
     @DisplayName("Заявка \"Оплата по карте\", заполненная данными карты со статусом Declined отклонена банком")
     public void shouldDeclinedWithDeclinedCard() {
         mainPage.selectOrderByCard()
@@ -53,6 +55,18 @@ public class OrderByCardTest {
     }
 
     @Test
+    @Issue("11")
+    @DisplayName("Ошибки валидации не отображаются при заполнении полей валидными данными")
+    public void shouldNotVisibleValidatedErrorsAfterFillValidData() {
+        mainPage.selectOrderByCard()
+                .clickContinue()
+                .checkAllFieldsErrorsIsVisible()
+                .setCardFields(getCardInfoWithApprovedCardNumber())
+                .checkAllFieldsErrorsIsNotVisible();
+    }
+
+    @Test
+    @Issue("10")
     @DisplayName("Пустая форма заявки \"Оплата по карте\" не отправляется в банк")
     public void shouldNotSendEmptyFields() {
         mainPage.selectOrderByCard()
@@ -102,6 +116,7 @@ public class OrderByCardTest {
     }
 
     @Test
+    @Issue("8")
     @DisplayName("Заявка \"Оплата по карте\" не отправляется со значением месяца, меньше \"01\", в поле \"Месяц\"")
     public void shouldNotSendWithTooSmallMonth() {
         mainPage.selectOrderByCard()
@@ -122,6 +137,7 @@ public class OrderByCardTest {
     }
 
     @Test
+    @Issue("7")
     @DisplayName("Заявка \"Оплата по карте\" не отправляется с символами на кириллице в поле \"Владелец\"")
     public void shouldNotSendWithCyrillicOwner() {
         mainPage.selectOrderByCard()
