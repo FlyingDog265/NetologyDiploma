@@ -1,0 +1,283 @@
+{
+  "uid" : "12e950c8921f3014",
+  "name" : "Заявка \"Оплата по карте\" не отправляется со значением года прошлого периода в поле \"Год\"",
+  "fullName" : "ru.netology.cases.OrderByCardTest.shouldNotSendWithPastPeriod",
+  "historyId" : "13f31dd9c82d06397dcfa17c24def7d3",
+  "time" : {
+    "start" : 1627156124730,
+    "stop" : 1627156125540,
+    "duration" : 810
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Выбрать оплату по карте",
+      "time" : {
+        "start" : 1627156124765,
+        "stop" : 1627156124882,
+        "duration" : 117
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Кнопка 'Купить' отображается на странице",
+        "time" : {
+          "start" : 1627156124765,
+          "stop" : 1627156124789,
+          "duration" : 24
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Нажать на кнопку 'Купить'",
+        "time" : {
+          "start" : 1627156124789,
+          "stop" : 1627156124842,
+          "duration" : 53
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Заголовок под кнопками содержит текст Оплата по карте",
+        "time" : {
+          "start" : 1627156124842,
+          "stop" : 1627156124882,
+          "duration" : 40
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "text",
+          "value" : "Оплата по карте"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Заполнить данные карты",
+      "time" : {
+        "start" : 1627156124882,
+        "stop" : 1627156125363,
+        "duration" : 481
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "card",
+        "value" : "ru.netology.helpers.Card@5e5c0318"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Нажать на кнопку 'Продолжить'",
+      "time" : {
+        "start" : 1627156125363,
+        "stop" : 1627156125411,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Сообщения об ошибке или успешной отправке не отображаются",
+      "time" : {
+        "start" : 1627156125411,
+        "stop" : 1627156125498,
+        "duration" : 87
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Подождать загрузку заявки",
+        "time" : {
+          "start" : 1627156125411,
+          "stop" : 1627156125420,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Отображается ошибка 'Истёк срок действия карты' в поле ввода года",
+      "time" : {
+        "start" : 1627156125498,
+        "stop" : 1627156125539,
+        "duration" : 41
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "error",
+        "value" : "Истёк срок действия карты"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Покупка тура по карте"
+  }, {
+    "name" : "story",
+    "value" : "Валидация полей"
+  }, {
+    "name" : "host",
+    "value" : "fv-az121-165"
+  }, {
+    "name" : "thread",
+    "value" : "3825@fv-az121-165.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.netology.cases.OrderByCardTest"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.netology.cases.OrderByCardTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldNotSendWithPastPeriod"
+  }, {
+    "name" : "suite",
+    "value" : "ru.netology.cases.OrderByCardTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "e2c8a1cea03cf4e5",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/12//#testresult/e2c8a1cea03cf4e5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627156037686,
+          "stop" : 1627156038518,
+          "duration" : 832
+        }
+      }, {
+        "uid" : "726eac7a13b72e96",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/11//#testresult/726eac7a13b72e96",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627050640170,
+          "stop" : 1627050641136,
+          "duration" : 966
+        }
+      }, {
+        "uid" : "bad274b28a46ec27",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/10//#testresult/bad274b28a46ec27",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627049802522,
+          "stop" : 1627049803497,
+          "duration" : 975
+        }
+      }, {
+        "uid" : "b7726d51978a0a42",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/9//#testresult/b7726d51978a0a42",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627040579904,
+          "stop" : 1627040580925,
+          "duration" : 1021
+        }
+      }, {
+        "uid" : "8eddd2bcb05250e1",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/8//#testresult/8eddd2bcb05250e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627029729315,
+          "stop" : 1627029730333,
+          "duration" : 1018
+        }
+      }, {
+        "uid" : "7264072f3fd677a6",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/7//#testresult/7264072f3fd677a6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626975570444,
+          "stop" : 1626975571370,
+          "duration" : 926
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "12e950c8921f3014.json",
+  "parameterValues" : [ ]
+}
