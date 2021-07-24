@@ -6,6 +6,7 @@
 [![Allure report](https://img.shields.io/badge/Allure%20Report-deployed-yellowgreen)](https://flyingdog265.github.io/NetologyDiploma/)
 
 [**Планирование автоматизации**](documentation/Plan.md)
+[**Отчёт о проведенном тестировании**](documentation/Report.md)
 
 #### Необходимое окружение: ####
 
