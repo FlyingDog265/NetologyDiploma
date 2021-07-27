@@ -1,0 +1,325 @@
+{
+  "uid" : "2a69d87fcc971cc",
+  "name" : "После отклоненной заявки \"Купить в кредит\", данные о заявке со статусом DECLINED сохраняются в базе данных",
+  "fullName" : "ru.netology.cases.DataBaseTest.shouldStoreDeclinedCreditByCardIntoDatabase",
+  "historyId" : "c78bf0be24560205ab2830ada1dc5fac",
+  "time" : {
+    "start" : 1627402322906,
+    "stop" : 1627402329163,
+    "duration" : 6257
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Очистить базу данных",
+      "time" : {
+        "start" : 1627402322977,
+        "stop" : 1627402323051,
+        "duration" : 74
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Оформить заявку \"Купить в кредит\", со статусом Declined",
+      "time" : {
+        "start" : 1627402323052,
+        "stop" : 1627402329141,
+        "duration" : 6089
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Выбрать оплату в кредит",
+        "time" : {
+          "start" : 1627402323052,
+          "stop" : 1627402323227,
+          "duration" : 175
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Кнопка 'Купить в кредит' отображается на странице",
+          "time" : {
+            "start" : 1627402323052,
+            "stop" : 1627402323081,
+            "duration" : 29
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Нажать на кнопку 'Купить в кредит'",
+          "time" : {
+            "start" : 1627402323082,
+            "stop" : 1627402323172,
+            "duration" : 90
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Заголовок под кнопками содержит текст Кредит по данным карты",
+          "time" : {
+            "start" : 1627402323172,
+            "stop" : 1627402323227,
+            "duration" : 55
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "text",
+            "value" : "Кредит по данным карты"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 3,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Заполнить данные карты",
+        "time" : {
+          "start" : 1627402323230,
+          "stop" : 1627402323888,
+          "duration" : 658
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "card",
+          "value" : "ru.netology.helpers.Card@545f787c"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Нажать на кнопку 'Продолжить'",
+        "time" : {
+          "start" : 1627402323888,
+          "stop" : 1627402323955,
+          "duration" : 67
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Отображается сообщение об отправке заявки",
+        "time" : {
+          "start" : 1627402323955,
+          "stop" : 1627402329141,
+          "duration" : 5186
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Подождать загрузку заявки",
+          "time" : {
+            "start" : 1627402323955,
+            "stop" : 1627402329117,
+            "duration" : 5162
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 8,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "База данных"
+  }, {
+    "name" : "story",
+    "value" : "Перегруз и проверка данных"
+  }, {
+    "name" : "host",
+    "value" : "fv-az252-851"
+  }, {
+    "name" : "thread",
+    "value" : "4233@fv-az252-851.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.netology.cases.DataBaseTest"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.netology.cases.DataBaseTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldStoreDeclinedCreditByCardIntoDatabase"
+  }, {
+    "name" : "suite",
+    "value" : "ru.netology.cases.DataBaseTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "24d4165c5f3b275d",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/15//#testresult/24d4165c5f3b275d",
+        "status" : "broken",
+        "statusDetails" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az224-717', ip: '10.1.0.201', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1036-azure', java.version: '11.0.12'\nDriver info: driver.version: SelenideDriver\nselenide.url: http://localhost:8080\nselenide.baseUrl: http://localhost:8080\nremote stacktrace: #0 0x562dac93c949 <unknown>\n",
+        "time" : {
+          "start" : 1627399935423,
+          "stop" : 1627399935630,
+          "duration" : 207
+        }
+      }, {
+        "uid" : "bef954bfb492784b",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/14//#testresult/bef954bfb492784b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627157087908,
+          "stop" : 1627157096385,
+          "duration" : 8477
+        }
+      }, {
+        "uid" : "84d95341215e5f39",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/13//#testresult/84d95341215e5f39",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627156085225,
+          "stop" : 1627156087324,
+          "duration" : 2099
+        }
+      }, {
+        "uid" : "ff8897e9a0f2c762",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/12//#testresult/ff8897e9a0f2c762",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627155994414,
+          "stop" : 1627155996763,
+          "duration" : 2349
+        }
+      }, {
+        "uid" : "4846b5d22389e8b5",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/11//#testresult/4846b5d22389e8b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627050580412,
+          "stop" : 1627050588407,
+          "duration" : 7995
+        }
+      }, {
+        "uid" : "111296388c91d760",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/10//#testresult/111296388c91d760",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627049747611,
+          "stop" : 1627049751833,
+          "duration" : 4222
+        }
+      }, {
+        "uid" : "903d22f900f29a9",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/9//#testresult/903d22f900f29a9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627040525630,
+          "stop" : 1627040531656,
+          "duration" : 6026
+        }
+      }, {
+        "uid" : "8883000d9dba85c5",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/8//#testresult/8883000d9dba85c5",
+        "status" : "failed",
+        "statusDetails" : "Статус не соответствует ожидаемому значению ==> expected: <DECLINED> but was: <null>",
+        "time" : {
+          "start" : 1627029684348,
+          "stop" : 1627029687792,
+          "duration" : 3444
+        }
+      }, {
+        "uid" : "6d413ff851565ba3",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/7//#testresult/6d413ff851565ba3",
+        "status" : "failed",
+        "statusDetails" : "Статус не соответствует ожидаемому значению ==> expected: <DECLINED> but was: <null>",
+        "time" : {
+          "start" : 1626975524327,
+          "stop" : 1626975529497,
+          "duration" : 5170
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2a69d87fcc971cc.json",
+  "parameterValues" : [ ]
+}

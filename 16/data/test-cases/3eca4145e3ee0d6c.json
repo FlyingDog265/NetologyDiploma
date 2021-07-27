@@ -1,0 +1,245 @@
+{
+  "uid" : "3eca4145e3ee0d6c",
+  "name" : "Страница \"Путешествие дня\" доступна по адресу localhost:8080",
+  "fullName" : "ru.netology.cases.MainPageTest.shouldOpenOnLocalhost",
+  "historyId" : "4f1c518e9989a66bed2cdef19db3f1eb",
+  "time" : {
+    "start" : 1627402475653,
+    "stop" : 1627402475763,
+    "duration" : 110
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Хедер отображается на главной странице",
+      "time" : {
+        "start" : 1627402475716,
+        "stop" : 1627402475740,
+        "duration" : 24
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Хедер содержит текст Путешествие дня",
+      "time" : {
+        "start" : 1627402475740,
+        "stop" : 1627402475763,
+        "duration" : 23
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "Путешествие дня"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Отображение элементов страницы"
+  }, {
+    "name" : "feature",
+    "value" : "Главная страница"
+  }, {
+    "name" : "host",
+    "value" : "fv-az252-851"
+  }, {
+    "name" : "thread",
+    "value" : "4233@fv-az252-851.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.netology.cases.MainPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.netology.cases.MainPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldOpenOnLocalhost"
+  }, {
+    "name" : "suite",
+    "value" : "ru.netology.cases.MainPageTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 14,
+        "unknown" : 0,
+        "total" : 15
+      },
+      "items" : [ {
+        "uid" : "b76b51cb89fa4913",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/15//#testresult/b76b51cb89fa4913",
+        "status" : "broken",
+        "statusDetails" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az224-717', ip: '10.1.0.201', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1036-azure', java.version: '11.0.12'\nDriver info: driver.version: SelenideDriver\nselenide.url: http://localhost:8080\nselenide.baseUrl: http://localhost:8080\nremote stacktrace: #0 0x555aa3651949 <unknown>\n",
+        "time" : {
+          "start" : 1627399940351,
+          "stop" : 1627399940485,
+          "duration" : 134
+        }
+      }, {
+        "uid" : "5bede323e6bc0952",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/14//#testresult/5bede323e6bc0952",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627157246453,
+          "stop" : 1627157246566,
+          "duration" : 113
+        }
+      }, {
+        "uid" : "9d1d091fcb22947b",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/13//#testresult/9d1d091fcb22947b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627156213100,
+          "stop" : 1627156213179,
+          "duration" : 79
+        }
+      }, {
+        "uid" : "b9e5f29a407f434c",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/12//#testresult/b9e5f29a407f434c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627156121529,
+          "stop" : 1627156121668,
+          "duration" : 139
+        }
+      }, {
+        "uid" : "9cad48de764af6c9",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/11//#testresult/9cad48de764af6c9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627050735655,
+          "stop" : 1627050735729,
+          "duration" : 74
+        }
+      }, {
+        "uid" : "9c270ecc4bcd82b2",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/10//#testresult/9c270ecc4bcd82b2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627049906242,
+          "stop" : 1627049906320,
+          "duration" : 78
+        }
+      }, {
+        "uid" : "aa7b49cfe836b74d",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/9//#testresult/aa7b49cfe836b74d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627040669824,
+          "stop" : 1627040669908,
+          "duration" : 84
+        }
+      }, {
+        "uid" : "d76ca516ddd572cc",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/8//#testresult/d76ca516ddd572cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627029817150,
+          "stop" : 1627029817265,
+          "duration" : 115
+        }
+      }, {
+        "uid" : "cdafd8e2c90102d9",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/7//#testresult/cdafd8e2c90102d9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626975639778,
+          "stop" : 1626975639892,
+          "duration" : 114
+        }
+      }, {
+        "uid" : "76fc8b4fe0586f32",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/6//#testresult/76fc8b4fe0586f32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626904532789,
+          "stop" : 1626904532952,
+          "duration" : 163
+        }
+      }, {
+        "uid" : "b0c06d38228923f9",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/5//#testresult/b0c06d38228923f9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626901769934,
+          "stop" : 1626901770096,
+          "duration" : 162
+        }
+      }, {
+        "uid" : "689e08457bf8398e",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/4//#testresult/689e08457bf8398e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626418345063,
+          "stop" : 1626418353741,
+          "duration" : 8678
+        }
+      }, {
+        "uid" : "b2e6ef46f80a05d2",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/3//#testresult/b2e6ef46f80a05d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626302544392,
+          "stop" : 1626302547709,
+          "duration" : 3317
+        }
+      }, {
+        "uid" : "aed7f9b95e786690",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/2//#testresult/aed7f9b95e786690",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626301993981,
+          "stop" : 1626302001500,
+          "duration" : 7519
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3eca4145e3ee0d6c.json",
+  "parameterValues" : [ ]
+}
