@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://FlyingDog265.github.io/NetologyDiploma",
+  "buildOrder" : 18,
+  "buildName" : "GitHub Actions Run #1072364655",
+  "buildUrl" : "https://github.com/FlyingDog265/NetologyDiploma/actions/runs/1072364655",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/18/"
+} ]
