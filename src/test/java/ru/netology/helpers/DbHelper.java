@@ -8,15 +8,23 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DbHelper {
-    private final static String dbUrl = System.getProperty("db.url");
     private final static String user = System.getProperty("login");
     private final static String password = System.getProperty("password");
 
     private DbHelper() {
     }
 
+    private static String getDbUrl() {
+        String dbUrl = System.getProperty("db.url");
+        String dbUrlDefault = "jdbc:mysql://host.docker.internal:3306/app";
+        if (dbUrl.isEmpty()) {
+            dbUrl = dbUrlDefault;
+        }
+        return dbUrl;
+    }
+
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(dbUrl, user, password);
+        return DriverManager.getConnection(getDbUrl(), user, password);
     }
 
     public static void clearTable() {
