@@ -1,0 +1,429 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "fv-az224-717",
+    "children" : [ {
+      "name" : "4160@fv-az224-717.Test worker(11)",
+      "children" : [ {
+        "name" : "Заявка \"Оплата по карте\" не отправляется с невалидным значением в поле \"Номер карты\"",
+        "uid" : "de42bfb9875562c8",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399937331,
+          "stop" : 1627399937483,
+          "duration" : 152
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Презентация главной страницы",
+        "uid" : "7c70c20035488ae8",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399940203,
+          "stop" : 1627399940348,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Ошибки валидации не отображаются при заполнении полей валидными данными",
+        "uid" : "4eda30706d5593d0",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399936165,
+          "stop" : 1627399936299,
+          "duration" : 134
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Заявка \"Кредит по данным карты\" не отправляется со значением месяца, меньше \"01\", в поле \"Месяц\"",
+        "uid" : "d9738c4c068b7467",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399938058,
+          "stop" : 1627399938199,
+          "duration" : 141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Заявка \"Оплата по карте\", заполненная валидными данными карты со статусом Approved успешно одобрена банком",
+        "uid" : "53641a73e6ac4c2f",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399936872,
+          "stop" : 1627399937014,
+          "duration" : 142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "После успешной заявки \"Оплата по карте\" сумма платежа равна сумме платежа в базе данных",
+        "uid" : "1f60a4482dfcc65f",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399935253,
+          "stop" : 1627399935414,
+          "duration" : 161
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Заявка \"Оплата по карте\" не отправляется со значением месяца, больше \"12\", в поле \"Месяц\"",
+        "uid" : "4749f178174f4522",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399936594,
+          "stop" : 1627399936722,
+          "duration" : 128
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Пустая форма заявки \"Кредит по данным карты\" не отправляется в банк",
+        "uid" : "5e4acca3199a388d",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399937783,
+          "stop" : 1627399937913,
+          "duration" : 130
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Ошибки валидации не отображаются при заполнении полей валидными данными",
+        "uid" : "9a3d4cbc685140f5",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399937922,
+          "stop" : 1627399938048,
+          "duration" : 126
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Заявка \"Кредит по данным карты\" не отправляется со значением месяца, больше \"12\", в поле \"Месяц\"",
+        "uid" : "39be2279ee222191",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399939389,
+          "stop" : 1627399939534,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Заявка \"Оплата по карте\" не отправляется с символами на кириллице в поле \"Владелец\"",
+        "uid" : "ee149947b8a1702b",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399937196,
+          "stop" : 1627399937328,
+          "duration" : 132
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Заявка \"Оплата по карте\" не отправляется со значением года прошлого периода в поле \"Год\"",
+        "uid" : "1da10ea095af255d",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399936739,
+          "stop" : 1627399936869,
+          "duration" : 130
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "После успешной заявки \"Оплата по карте\", данные о платеже со статусом APPROVED сохраняются в базе данных",
+        "uid" : "3fcc9ca6eceaf2ca",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399934584,
+          "stop" : 1627399934919,
+          "duration" : 335
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "После отклоненной заявки \"Купить в кредит\", данные о заявке со статусом DECLINED сохраняются в базе данных",
+        "uid" : "24d4165c5f3b275d",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399935423,
+          "stop" : 1627399935630,
+          "duration" : 207
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "После отклоненной заявки \"Оплата по карте\", данные о заявке со статусом DECLINED сохраняются в базе данных",
+        "uid" : "dd4400833edd45d3",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399923642,
+          "stop" : 1627399934476,
+          "duration" : 10834
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "После успешной заявки \"Купить в кредит\", данные о платеже со статусом APPROVED сохраняются в базе данных",
+        "uid" : "fbaf0bdb17fc2358",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399935103,
+          "stop" : 1627399935249,
+          "duration" : 146
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Заявка \"Оплата по карте\" не отправляется со значением месяца, меньше \"01\", в поле \"Месяц\"",
+        "uid" : "d2a2fc7e6b1c4fa3",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399936310,
+          "stop" : 1627399936436,
+          "duration" : 126
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Пустая форма заявки \"Оплата по карте\" не отправляется в банк",
+        "uid" : "ec29a84f4218cb3a",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399936011,
+          "stop" : 1627399936145,
+          "duration" : 134
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Заявка \"Кредит по данным карты\", заполненная невалидными данными карты, отклонена банком",
+        "uid" : "9c393bfcc5022784",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399938202,
+          "stop" : 1627399939382,
+          "duration" : 1180
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Заявка \"Оплата по карте\" не отправляется со значением года далекого будущего периода в поле \"Год\"",
+        "uid" : "c27d6612bc142ac",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399935670,
+          "stop" : 1627399935846,
+          "duration" : 176
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "После успешной заявки \"Купить в кредит\" сумма платежа равна сумме платежа в базе данных",
+        "uid" : "3596fe60692ee80b",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399934945,
+          "stop" : 1627399935084,
+          "duration" : 139
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Заявка \"Кредит по данным карты\" не отправляется с символами на кириллице в поле \"Владелец\"",
+        "uid" : "8fd34d28049f81ce",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399939933,
+          "stop" : 1627399940060,
+          "duration" : 127
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Заявка \"Кредит по данным карты\", заполненная валидными данными карты со статусом Approved успешно одобрена банком",
+        "uid" : "a1f6e638d192b710",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399939670,
+          "stop" : 1627399939798,
+          "duration" : 128
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Заявка \"Кредит по данным карты\" не отправляется с невалидным значением в поле \"Номер карты\"",
+        "uid" : "7f66355b4529d5ff",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399940063,
+          "stop" : 1627399940197,
+          "duration" : 134
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Заявка \"Кредит по данным карты\" не отправляется со значением года далекого будущего периода в поле \"Год\"",
+        "uid" : "378eeb43263890fe",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399937488,
+          "stop" : 1627399937637,
+          "duration" : 149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Заявка \"Кредит по данным карты\", заполненная данными карты со статусом Declined отклонена банком",
+        "uid" : "7c8ce58fab0f90d8",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399937646,
+          "stop" : 1627399937776,
+          "duration" : 130
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Страница \"Путешествие дня\" доступна по адресу localhost:8080",
+        "uid" : "b76b51cb89fa4913",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399940351,
+          "stop" : 1627399940485,
+          "duration" : 134
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Заявка \"Оплата по карте\" не отправляется с невалидным значением в поле \"CVC/CVV\"",
+        "uid" : "9afd9cdaf0900c88",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399937035,
+          "stop" : 1627399937174,
+          "duration" : 139
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Заявка \"Кредит по данным карты\" не отправляется с невалидным значением в поле \"CVC/CVV\"",
+        "uid" : "79baf4a783156411",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399939800,
+          "stop" : 1627399939926,
+          "duration" : 126
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Заявка \"Оплата по карте\", заполненная данными карты со статусом Declined отклонена банком",
+        "uid" : "5e2f875bbec6a0d5",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399935864,
+          "stop" : 1627399936003,
+          "duration" : 139
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Заявка \"Кредит по данным карты\" не отправляется со значением года прошлого периода в поле \"Год\"",
+        "uid" : "1906a1939aa848e8",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399939538,
+          "stop" : 1627399939665,
+          "duration" : 127
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Заявка \"Оплата по карте\", заполненная невалидными данными карты, отклонена банком",
+        "uid" : "b54fe8354abc0cf2",
+        "parentUid" : "f3a817e7e70d2716896225ec155f196d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627399936441,
+          "stop" : 1627399936582,
+          "duration" : 141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f3a817e7e70d2716896225ec155f196d"
+    } ],
+    "uid" : "c4ff41859ad23a439576d452471efd02"
+  } ],
+  "name" : "timeline"
+}
