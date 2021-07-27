@@ -22,7 +22,7 @@ public class DataBaseTest {
     private MainPage mainPage;
     private final String url = System.getProperty("app.url");
 
-    private final int amount = 45000;
+    private final int amount = 4500000;
     private final String approvedStatus = "APPROVED";
     private final String declinedStatus = "DECLINED";
 
@@ -89,7 +89,6 @@ public class DataBaseTest {
     }
 
     @Test
-    @Issue("2")
     @DisplayName("После успешной заявки \"Оплата по карте\" сумма платежа равна сумме платежа в базе данных")
     public void shouldEqualsAmountsApprovedOrderByCardIntoDatabase() {
         step("Очистить базу данных", DbHelper::clearTable);

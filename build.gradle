@@ -36,7 +36,6 @@ dependencies {
 test {
     useJUnitPlatform()
     systemProperty 'allure.link.issue.pattern', 'https://github.com/FlyingDog265/NetologyDiploma/issues/{}'
-    systemProperty 'selenide.headless', System.getProperty('selenide.headless')
     systemProperty "db.url", System.getProperty("db.url")
     systemProperty "app.url", System.getProperty("app.url", "http://localhost:8080")
     systemProperty "login", System.getProperty("login", "app")
