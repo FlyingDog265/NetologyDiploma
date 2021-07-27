@@ -1,0 +1,213 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Element should be visible {div[class*='notification_status']}\nElement: '<div class=\"notification notification_status_ok notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\" displayed:false></div>'\nActual value: visible:false\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403211964.0.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403211964.0.html\nTimeout: 10 s.",
+      "children" : [ {
+        "name" : "После успешной заявки \"Купить в кредит\" сумма платежа равна сумме платежа в базе данных",
+        "uid" : "5a1be3b96a7751ad",
+        "parentUid" : "8640b2e0880b587de64c0360dedb4e50",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627403196503,
+          "stop" : 1627403212156,
+          "duration" : 15653
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8640b2e0880b587de64c0360dedb4e50"
+    }, {
+      "name" : "Element should be visible {div[class*='notification_status_error']}\nElement: '<div class=\"notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\" displayed:false></div>'\nActual value: visible:false\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403249564.1.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403249564.1.html\nTimeout: 10 s.",
+      "children" : [ {
+        "name" : "Заявка \"Оплата по карте\", заполненная данными карты со статусом Declined отклонена банком",
+        "uid" : "a1c53df17be23e33",
+        "parentUid" : "853d6f23c6c63a235374b1e939b57880",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627403231508,
+          "stop" : 1627403249733,
+          "duration" : 18225
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "853d6f23c6c63a235374b1e939b57880"
+    }, {
+      "name" : "Element should have text 'Поле обязательно для заполнения' {fieldset div:nth-of-type(1) span[class='input__sub']}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403254286.2.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403254286.2.html\nTimeout: 4 s.",
+      "children" : [ {
+        "name" : "Пустая форма заявки \"Оплата по карте\" не отправляется в банк",
+        "uid" : "cf99799798dfb5db",
+        "parentUid" : "c22121ea2f27975d71523e2939c5514b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627403249738,
+          "stop" : 1627403254429,
+          "duration" : 4691
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c22121ea2f27975d71523e2939c5514b"
+    }, {
+      "name" : "Element should be not visible {fieldset div:nth-of-type(1) span[class='input__sub']}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nActual value: visible:true\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403259509.3.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403259509.3.html\nTimeout: 4 s.",
+      "children" : [ {
+        "name" : "Ошибки валидации не отображаются при заполнении полей валидными данными",
+        "uid" : "b9be62a3d4a99e98",
+        "parentUid" : "8d30b202ddd654bfb376ea3e32351421",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627403254432,
+          "stop" : 1627403259658,
+          "duration" : 5226
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8d30b202ddd654bfb376ea3e32351421"
+    }, {
+      "name" : "Element should be not visible {div[class*='notification_status_ok']}\nElement: '<div class=\"notification notification_visible notification_status_ok notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\">Успешно\nОперация одобрена Банком.</div>'\nActual value: visible:true\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403273411.4.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403273411.4.html\nTimeout: 4 s.",
+      "children" : [ {
+        "name" : "Заявка \"Оплата по карте\" не отправляется со значением месяца, меньше \"01\", в поле \"Месяц\"",
+        "uid" : "59ed807ed593e9b",
+        "parentUid" : "c3f6e5c122d75f3263e3296872b4d91a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627403259664,
+          "stop" : 1627403273573,
+          "duration" : 13909
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c3f6e5c122d75f3263e3296872b4d91a"
+    }, {
+      "name" : "Element should be not visible {div[class*='notification_status_ok']}\nElement: '<div class=\"notification notification_visible notification_status_ok notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\">Успешно\nОперация одобрена Банком.</div>'\nActual value: visible:true\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403306679.5.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403306679.5.html\nTimeout: 4 s.",
+      "children" : [ {
+        "name" : "Заявка \"Оплата по карте\" не отправляется с символами на кириллице в поле \"Владелец\"",
+        "uid" : "9215bb32b560c609",
+        "parentUid" : "e0957bc2cb50407cc4c404dbd3a568a9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627403295954,
+          "stop" : 1627403306847,
+          "duration" : 10893
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e0957bc2cb50407cc4c404dbd3a568a9"
+    }, {
+      "name" : "Element should be visible {div[class*='notification_status_error']}\nElement: '<div class=\"notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\" displayed:false></div>'\nActual value: visible:false\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403322071.6.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403322071.6.html\nTimeout: 10 s.",
+      "children" : [ {
+        "name" : "Заявка \"Кредит по данным карты\", заполненная данными карты со статусом Declined отклонена банком",
+        "uid" : "3e3c3c03c5ac8596",
+        "parentUid" : "9fe6c6d86c84c305a34d5e0ed78f2095",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627403308932,
+          "stop" : 1627403322218,
+          "duration" : 13286
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9fe6c6d86c84c305a34d5e0ed78f2095"
+    }, {
+      "name" : "Element should have text 'Поле обязательно для заполнения' {fieldset div:nth-of-type(1) span[class='input__sub']}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403326904.7.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403326904.7.html\nTimeout: 4 s.",
+      "children" : [ {
+        "name" : "Пустая форма заявки \"Кредит по данным карты\" не отправляется в банк",
+        "uid" : "db6047cc094804b0",
+        "parentUid" : "2ab998101bae6abcef8718c89053f127",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627403322237,
+          "stop" : 1627403327053,
+          "duration" : 4816
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2ab998101bae6abcef8718c89053f127"
+    }, {
+      "name" : "Element should be not visible {fieldset div:nth-of-type(1) span[class='input__sub']}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nActual value: visible:true\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403332217.8.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403332217.8.html\nTimeout: 4 s.",
+      "children" : [ {
+        "name" : "Ошибки валидации не отображаются при заполнении полей валидными данными",
+        "uid" : "5ab2349769b1400a",
+        "parentUid" : "67599f2ddcef50e23234fe6b50b2d9b1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627403327056,
+          "stop" : 1627403332375,
+          "duration" : 5319
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "67599f2ddcef50e23234fe6b50b2d9b1"
+    }, {
+      "name" : "Element should be not visible {div[class*='notification_status_ok']}\nElement: '<div class=\"notification notification_visible notification_status_ok notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\">Успешно\nОперация одобрена Банком.</div>'\nActual value: visible:true\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403343413.9.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403343413.9.html\nTimeout: 4 s.",
+      "children" : [ {
+        "name" : "Заявка \"Кредит по данным карты\" не отправляется со значением месяца, меньше \"01\", в поле \"Месяц\"",
+        "uid" : "9df345f24dcfa16e",
+        "parentUid" : "6a7ef8b1291100e64baeef13226de4c1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627403332378,
+          "stop" : 1627403343571,
+          "duration" : 11193
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6a7ef8b1291100e64baeef13226de4c1"
+    }, {
+      "name" : "Element should be not visible {div[class*='notification_status_ok']}\nElement: '<div class=\"notification notification_visible notification_status_ok notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\">Успешно\nОперация одобрена Банком.</div>'\nActual value: visible:true\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403374255.10.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403374255.10.html\nTimeout: 4 s.",
+      "children" : [ {
+        "name" : "Заявка \"Кредит по данным карты\" не отправляется с символами на кириллице в поле \"Владелец\"",
+        "uid" : "8cf75b2ac2b02004",
+        "parentUid" : "bd6d464709747a2b097ebaff5c29fc57",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627403361421,
+          "stop" : 1627403374407,
+          "duration" : 12986
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bd6d464709747a2b097ebaff5c29fc57"
+    }, {
+      "name" : "Element should have text 'Марракеш' {div[class*='cardPreview'] h3}\nElement: '<h3 class=\"heading heading_size_m heading_theme_alfa-on-white Order_cardHeading__2PyrG\">Марракэш</h3>'\nScreenshot: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403379716.11.png\nPage source: file:/home/runner/work/NetologyDiploma/NetologyDiploma/build/reports/tests/1627403379716.11.html\nTimeout: 4 s.",
+      "children" : [ {
+        "name" : "Презентация главной страницы",
+        "uid" : "cd93ba29825051e6",
+        "parentUid" : "43d6bcd536e107a20b96588bd3b6b513",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627403375600,
+          "stop" : 1627403379865,
+          "duration" : 4265
+        },
+        "flaky" : true,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "43d6bcd536e107a20b96588bd3b6b513"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

@@ -1,0 +1,350 @@
+{
+  "uid" : "474e0c777bbb6af7",
+  "name" : "После успешной заявки \"Оплата по карте\" сумма платежа равна сумме платежа в базе данных",
+  "fullName" : "ru.netology.cases.DataBaseTest.shouldEqualsAmountsApprovedOrderByCardIntoDatabase",
+  "historyId" : "2de5439739c485e3d38801b1223d10ed",
+  "time" : {
+    "start" : 1627403217133,
+    "stop" : 1627403225891,
+    "duration" : 8758
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Очистить базу данных",
+      "time" : {
+        "start" : 1627403217177,
+        "stop" : 1627403217253,
+        "duration" : 76
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Оформить заявку \"Оплата по карте\", со статусом Approved",
+      "time" : {
+        "start" : 1627403217253,
+        "stop" : 1627403225847,
+        "duration" : 8594
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Выбрать оплату по карте",
+        "time" : {
+          "start" : 1627403217253,
+          "stop" : 1627403217455,
+          "duration" : 202
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Кнопка 'Купить' отображается на странице",
+          "time" : {
+            "start" : 1627403217253,
+            "stop" : 1627403217282,
+            "duration" : 29
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Нажать на кнопку 'Купить'",
+          "time" : {
+            "start" : 1627403217282,
+            "stop" : 1627403217353,
+            "duration" : 71
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Заголовок под кнопками содержит текст Оплата по карте",
+          "time" : {
+            "start" : 1627403217353,
+            "stop" : 1627403217455,
+            "duration" : 102
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "text",
+            "value" : "Оплата по карте"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 3,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Заполнить данные карты",
+        "time" : {
+          "start" : 1627403217455,
+          "stop" : 1627403218090,
+          "duration" : 635
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "card",
+          "value" : "ru.netology.helpers.Card@330ae2a0"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Нажать на кнопку 'Продолжить'",
+        "time" : {
+          "start" : 1627403218090,
+          "stop" : 1627403218209,
+          "duration" : 119
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Отображается сообщение об отправке заявки",
+        "time" : {
+          "start" : 1627403218209,
+          "stop" : 1627403225847,
+          "duration" : 7638
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Подождать загрузку заявки",
+          "time" : {
+            "start" : 1627403218209,
+            "stop" : 1627403225823,
+            "duration" : 7614
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 8,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверить, что в таблицах появились данные об операции",
+      "time" : {
+        "start" : 1627403225847,
+        "stop" : 1627403225868,
+        "duration" : 21
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить, что стоимость заявки совпадает с суммой в таблице",
+      "time" : {
+        "start" : 1627403225868,
+        "stop" : 1627403225891,
+        "duration" : 23
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 12,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Перегруз и проверка данных"
+  }, {
+    "name" : "feature",
+    "value" : "База данных"
+  }, {
+    "name" : "host",
+    "value" : "fv-az93-604"
+  }, {
+    "name" : "thread",
+    "value" : "4168@fv-az93-604.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.netology.cases.DataBaseTest"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.netology.cases.DataBaseTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldEqualsAmountsApprovedOrderByCardIntoDatabase"
+  }, {
+    "name" : "suite",
+    "value" : "ru.netology.cases.DataBaseTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 6,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "18a729084c5f2306",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/16//#testresult/18a729084c5f2306",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627402319749,
+          "stop" : 1627402322902,
+          "duration" : 3153
+        }
+      }, {
+        "uid" : "1f60a4482dfcc65f",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/15//#testresult/1f60a4482dfcc65f",
+        "status" : "broken",
+        "statusDetails" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az224-717', ip: '10.1.0.201', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1036-azure', java.version: '11.0.12'\nDriver info: driver.version: SelenideDriver\nselenide.url: http://localhost:8080\nselenide.baseUrl: http://localhost:8080\nremote stacktrace: #0 0x55e290701949 <unknown>\n",
+        "time" : {
+          "start" : 1627399935253,
+          "stop" : 1627399935414,
+          "duration" : 161
+        }
+      }, {
+        "uid" : "92c947df2d1cb020",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/14//#testresult/92c947df2d1cb020",
+        "status" : "failed",
+        "statusDetails" : "Суммы на сайте и в БД не сходятся! ==> expected: <45000> but was: <4500000>",
+        "time" : {
+          "start" : 1627157078723,
+          "stop" : 1627157087889,
+          "duration" : 9166
+        }
+      }, {
+        "uid" : "ef6ebb5522582b5f",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/13//#testresult/ef6ebb5522582b5f",
+        "status" : "failed",
+        "statusDetails" : "Суммы на сайте и в БД не сходятся! ==> expected: <45000> but was: <4500000>",
+        "time" : {
+          "start" : 1627156074535,
+          "stop" : 1627156085208,
+          "duration" : 10673
+        }
+      }, {
+        "uid" : "aa6782fb30238de0",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/12//#testresult/aa6782fb30238de0",
+        "status" : "failed",
+        "statusDetails" : "Суммы на сайте и в БД не сходятся! ==> expected: <45000> but was: <4500000>",
+        "time" : {
+          "start" : 1627155984250,
+          "stop" : 1627155994402,
+          "duration" : 10152
+        }
+      }, {
+        "uid" : "c02e53b6132eca18",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/11//#testresult/c02e53b6132eca18",
+        "status" : "failed",
+        "statusDetails" : "Суммы на сайте и в БД не сходятся! ==> expected: <45000> but was: <4500000>",
+        "time" : {
+          "start" : 1627050574676,
+          "stop" : 1627050580390,
+          "duration" : 5714
+        }
+      }, {
+        "uid" : "bcae1f80e9b47b57",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/10//#testresult/bcae1f80e9b47b57",
+        "status" : "failed",
+        "statusDetails" : "Суммы на сайте и в БД не сходятся! ==> expected: <45000> but was: <4500000>",
+        "time" : {
+          "start" : 1627049742527,
+          "stop" : 1627049747602,
+          "duration" : 5075
+        }
+      }, {
+        "uid" : "3082565ece4d230b",
+        "reportUrl" : "https://FlyingDog265.github.io/NetologyDiploma/9//#testresult/3082565ece4d230b",
+        "status" : "failed",
+        "statusDetails" : "Суммы на сайте и в БД не сходятся! ==> expected: <45000> but was: <4500000>",
+        "time" : {
+          "start" : 1627040514457,
+          "stop" : 1627040525605,
+          "duration" : 11148
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "474e0c777bbb6af7.json",
+  "parameterValues" : [ ]
+}
